@@ -68,7 +68,7 @@ const Featured = () => {
             <div class='col-md-6 col-lg-4'>
               <div class='card shadow stretched-link'>
                 <div class='img-container'>
-                  <img src={float} class='card-img-top embed-responsive-item' />
+                  <img src={float} class='card-img-top' />
                 </div>
 
                 <div class='card-body'>
@@ -85,7 +85,7 @@ const Featured = () => {
             <div class='col-md-6 col-lg-4'>
               <div class='card shadow stretched-link'>
                 <div class='img-container'>
-                  <img src={view} class='card-img-top embed-responsive-item' />
+                  <img src={view} class='card-img-top' />
                 </div>
 
                 <div class='card-body'>
@@ -102,10 +102,7 @@ const Featured = () => {
             <div class='col-md-6 col-lg-4'>
               <div class='card shadow stretched-link'>
                 <div class='img-container'>
-                  <img
-                    src={reflection}
-                    class='card-img-top embed-responsive-item'
-                  />
+                  <img src={reflection} class='card-img-top' />
                 </div>
 
                 <div class='card-body'>
