@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar  */
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+
+.bg-info {
+  background: #17a2b8;
+}
+.icon-nav {
+  color: white;
+}
+
+/* Carousel */
+
+.carousel-item {
+  height: 600px;
+}
+.carousel-image-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('/src/components/images/slide1.jpg');
+  background-size: cover;
+}
+.carousel-image-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('/src/components/images/slide3.jpg');
+  background-size: cover;
+}
+.carousel-image-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('/src/components/images/slide2.jpg');
+  background-size: cover;
+}
+
+.title-color {
+  color: #fff;
+}
+.btn-color {
+  background: #17a2b8;
+  color: #fff;
+}
+
+/* Footer Styles */
+
+.footer-link {
+  color: #b9e3ea;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #e8f6f8;
+  text-decoration: none;
+}
+.footer-info {
+  color: #b9e3ea;
+}
+
+.footer-contact {
+  color: #b9e3ea;
+}
+
+.copyright {
+  color: #b9e3ea;
+  font-size: 14;
+}
+
+.about-section {
+  padding: 60px;
+}
+
+/* practice classes */
+
+.home {
+  padding: 40px;
+}
