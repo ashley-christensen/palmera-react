@@ -69,8 +69,7 @@ body {
   color: #17a2b8;
 }
 .icon-main {
-  width: 20;
-  height: 20;
+  margin-bottom: 20px;
 }
 .items-grid-container {
   margin-bottom: 30px;
