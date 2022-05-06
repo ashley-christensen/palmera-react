@@ -25,7 +25,7 @@ const Featured = () => {
                   <div className='card-text'>
                     <h5>Sunset Viewing</h5>
                     <span>
-                      <i className='fa-dollar-sign'>150 per person</i>
+                      <i className='fa-solid fa-dollar-sign'>150 per person</i>
                     </span>
                   </div>
                   <button className='btn btn-sm btn-color mt-3'>
@@ -43,7 +43,9 @@ const Featured = () => {
                   <div className='card-text justify-content-between'>
                     <h5>Private Pool</h5>
                     <span>
-                      <i className='fa-dollar-sign'>225 per afternoon</i>
+                      <i className='fa-solid fa-dollar-sign'>
+                        225 per afternoon
+                      </i>
                     </span>
                   </div>
                   <button className='btn btn-sm btn-color mt-3'>
@@ -61,7 +63,7 @@ const Featured = () => {
                   <div className='card-text justify-content-between'>
                     <h5>Cocktail Hour</h5>
                     <span>
-                      <i className='fa-dollar-sign'>75 per person</i>
+                      <i className='fa-solid fa-dollar-sign'>75 per person</i>
                     </span>
                   </div>
                   <button className='btn btn-sm btn-color mt-3'>
@@ -84,7 +86,7 @@ const Featured = () => {
                   <div className='card-text justify-content-between'>
                     <h5>Sea-Life Float</h5>
                     <span>
-                      <i className='fa-dollar-sign'>125 per person</i>
+                      <i className='fa-solid fa-dollar-sign'>125 per person</i>
                     </span>
                   </div>
                   <button className='btn btn-sm btn-color mt-3'>
@@ -106,7 +108,7 @@ const Featured = () => {
                   <div className='card-text justify-content-between'>
                     <h5>Beach reservation</h5>
                     <span>
-                      <i className='fa-dollar-sign'>300 per day</i>
+                      <i className='fa-solid fa-dollar-sign'>300 per day</i>
                     </span>
                   </div>
                   <button className='btn btn-sm btn-color mt-3'>
@@ -128,7 +130,7 @@ const Featured = () => {
                   <div className='card-text'>
                     <h5>Shaded Loungers</h5>
                     <span>
-                      <i className='fa-dollar-sign'>775 per week</i>
+                      <i className='fa-solid fa-dollar-sign'>775 per week</i>
                     </span>
                   </div>
                   <button className='btn btn-sm btn-color mt-3'>
