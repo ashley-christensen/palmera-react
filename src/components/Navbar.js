@@ -1,14 +1,14 @@
 import React from 'react';
-
+import { Link } from 'react';
 
 const Navbar = () => {
   return (
     <>
       <nav className='navbar navbar-expand-sm navbar-dark bg-info'>
         <div className='container'>
-          <a href='/index.html' className='navbar-brand'>
+          <Link to='/' className='navbar-brand'>
             Palmera Resort and Spa
-          </a>
+          </Link>
           <button
             className='navbar-toggler'
             data-toggle='collapse'
@@ -19,24 +19,24 @@ const Navbar = () => {
           <div className='collapse navbar-collapse' id='navbarCollapse'>
             <ul className='navbar-nav ml-auto'>
               <li className='nav-item active'>
-                <a href='#' className='nav-link'>
+                <Link to='/' className='nav-link'>
                   Home
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='/about.html' className='nav-link'>
+                <Link to='/About' className='nav-link'>
                   About
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='/featured.html' className='nav-link'>
+                <Link to='/Featured' className='nav-link'>
                   Featured
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='/reservations.html' className='nav-link'>
+                <Link to='/Reservations' className='nav-link'>
                   Reservations
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
                 <i className='fas icon-nav fa-duotone fa-umbrella-beach fa-2x'></i>
