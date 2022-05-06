@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
-      <nav className='navbar navbar-expand-sm navbar-dark bg-info'>
+      <nav className='navbar navbar-expand-sm navbar-dark bg-info py-1'>
         <div className='container'>
           <Link to='/' className='navbar-brand'>
             Palmera Resort and Spa
@@ -50,4 +50,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

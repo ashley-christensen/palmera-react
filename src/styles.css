@@ -7,7 +7,9 @@ body {
 }
 
 /* Navbar  */
-
+.navbar-brand {
+  font-size: 20px;
+}
 .navbar .nav-link {
   font-size: 12px;
   text-transform: uppercase;
@@ -63,11 +65,12 @@ body {
   padding: 60px;
 }
 .icon {
-  font-size: 24px;
+  font-size: 20px;
   color: #17a2b8;
 }
 .icon-main {
-  margin-bottom: 20px;
+  width: 20;
+  height: 20;
 }
 .items-grid-container {
   margin-bottom: 30px;
