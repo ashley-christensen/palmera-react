@@ -9,110 +9,131 @@ import reflection from '../images/reflection.jpg';
 const Featured = () => {
   return (
     <>
-      <section class='section-cards bg-c-light border-bottom py-5'>
-        <div class='container items-grid-container'>
-          <h3 class='font-weight-bold display-6 text-center'>
+      <section className='section-cards bg-c-light border-bottom py-5'>
+        <div className='container items-grid-container'>
+          <h3 className='font-weight-bold display-6 text-center'>
             Featured Experiences
           </h3>
 
-          <div class='row'>
-            <div class='col-md-6 col-lg-4'>
-              <div class='card shadow stretched-link'>
-                <div class='img-container'>
-                  <img src={cabo} class='card-img-top embed-responsive-item' />
+          <div className='row'>
+            <div className='col-md-6 col-lg-4'>
+              <div className='card shadow stretched-link'>
+                <div className='img-container'>
+                  <img src={cabo} className='card-img-top' />
                 </div>
-                <div class='card-body'>
-                  <div class='card-text'>
+                <div className='card-body'>
+                  <div className='card-text'>
                     <h5>Sunset Viewing</h5>
                     <span>
-                      <i class='fa-dollar-sign'>150 per person</i>
+                      <i className='fa-dollar-sign'>150 per person</i>
                     </span>
                   </div>
-                  <button class='btn btn-sm btn-color mt-3'>Learn more</button>
+                  <button className='btn btn-sm btn-color mt-3'>
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
-            <div class='col-md-6 col-lg-4'>
-              <div class='card shadow stretched-link'>
-                <div class='img-container card-img-wrap'>
-                  <img src={palms} class='card-img-top' />
+            <div className='col-md-6 col-lg-4'>
+              <div className='card shadow stretched-link'>
+                <div className='img-container card-img-wrap'>
+                  <img src={palms} className='card-img-top' />
                 </div>
-                <div class='card-body'>
-                  <div class='card-text justify-content-between'>
+                <div className='card-body'>
+                  <div className='card-text justify-content-between'>
                     <h5>Private Pool</h5>
                     <span>
-                      <i class='fa-dollar-sign'>225 per afternoon</i>
+                      <i className='fa-dollar-sign'>225 per afternoon</i>
                     </span>
                   </div>
-                  <button class='btn btn-sm btn-color mt-3'>Learn more</button>
+                  <button className='btn btn-sm btn-color mt-3'>
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
-            <div class='col-md-6 col-lg-4'>
-              <div class='card shadow stretched-link'>
-                <div class='img-container'>
-                  <img src={cocktail} class='card-img-top' />
+            <div className='col-md-6 col-lg-4'>
+              <div className='card shadow stretched-link'>
+                <div className='img-container'>
+                  <img src={cocktail} className='card-img-top' />
                 </div>
-                <div class='card-body'>
-                  <div class='card-text justify-content-between'>
+                <div className='card-body'>
+                  <div className='card-text justify-content-between'>
                     <h5>Cocktail Hour</h5>
                     <span>
-                      <i class='fa-dollar-sign'>75 per person</i>
+                      <i className='fa-dollar-sign'>75 per person</i>
                     </span>
                   </div>
-                  <button class='btn btn-sm btn-color mt-3'>Learn more</button>
+                  <button className='btn btn-sm btn-color mt-3'>
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
 
-            <div class='col-md-6 col-lg-4'>
-              <div class='card shadow stretched-link'>
-                <div class='img-container'>
-                  <img src={float} class='card-img-top' />
+            <div className='col-md-6 col-lg-4'>
+              <div className='card shadow stretched-link'>
+                <div className='img-container'>
+                  <img
+                    src={float}
+                    className='card-img-top embed-responsive-item'
+                  />
                 </div>
 
-                <div class='card-body'>
-                  <div class='card-text justify-content-between'>
+                <div className='card-body'>
+                  <div className='card-text justify-content-between'>
                     <h5>Sea-Life Float</h5>
                     <span>
-                      <i class='fa-dollar-sign'>125 per person</i>
+                      <i className='fa-dollar-sign'>125 per person</i>
                     </span>
                   </div>
-                  <button class='btn btn-sm btn-color mt-3'>Learn more</button>
+                  <button className='btn btn-sm btn-color mt-3'>
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
-            <div class='col-md-6 col-lg-4'>
-              <div class='card shadow stretched-link'>
-                <div class='img-container'>
-                  <img src={view} class='card-img-top' />
+            <div className='col-md-6 col-lg-4'>
+              <div className='card shadow stretched-link'>
+                <div className='img-container'>
+                  <img
+                    src={view}
+                    className='card-img-top embed-responsive-item'
+                  />
                 </div>
 
-                <div class='card-body'>
-                  <div class='card-text justify-content-between'>
+                <div className='card-body'>
+                  <div className='card-text justify-content-between'>
                     <h5>Beach reservation</h5>
                     <span>
-                      <i class='fa-dollar-sign'>300 per day</i>
+                      <i className='fa-dollar-sign'>300 per day</i>
                     </span>
                   </div>
-                  <button class='btn btn-sm btn-color mt-3'>Learn more</button>
+                  <button className='btn btn-sm btn-color mt-3'>
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
-            <div class='col-md-6 col-lg-4'>
-              <div class='card shadow stretched-link'>
-                <div class='img-container'>
-                  <img src={reflection} class='card-img-top' />
+            <div className='col-md-6 col-lg-4'>
+              <div className='card shadow stretched-link'>
+                <div className='img-container'>
+                  <img
+                    src={reflection}
+                    className='card-img-top embed-responsive-item'
+                  />
                 </div>
 
-                <div class='card-body'>
-                  <div class='card-text'>
+                <div className='card-body'>
+                  <div className='card-text'>
                     <h5>Shaded Loungers</h5>
                     <span>
-                      <i class='fa-dollar-sign'>775 per week</i>
+                      <i className='fa-dollar-sign'>775 per week</i>
                     </span>
                   </div>
-                  <button class='btn btn-sm btn-color mt-3'>Learn more</button>
+                  <button className='btn btn-sm btn-color mt-3'>
+                    Learn more
+                  </button>
                 </div>
               </div>
             </div>
