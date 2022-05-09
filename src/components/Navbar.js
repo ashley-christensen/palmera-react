@@ -18,7 +18,7 @@ const Navbar = () => {
 					</button>
 					<div className='collapse navbar-collapse' id='navbarCollapse'>
 						<ul className='navbar-nav ml-auto'>
-							<li className='nav-item '>
+							<li className='nav-item'>
 								<Link to='/' className='nav-link'>
 									Home
 								</Link>
