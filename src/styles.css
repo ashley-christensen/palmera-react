@@ -11,7 +11,7 @@ body {
   font-size: 20px;
 }
 .navbar .nav-link {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   padding-left: 16px !important;
   padding-right: 16px !important;
@@ -30,7 +30,7 @@ body {
 /* Carousel */
 
 .carousel-item {
-  height: 480px;
+  height: 600px;
 }
 .carousel-image-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
