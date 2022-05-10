@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
 		<>
 			<nav className='navbar navbar-expand-sm navbar-dark bg-info'>
 				<div className='container'>
-					<Link to='/' className='navbar-brand'>
+					<NavLink to='/' className='navbar-brand'>
 						Palmera Resort and Spa
-					</Link>
+					</NavLink>
 					<button
 						className='navbar-toggler'
 						data-toggle='collapse'
@@ -19,24 +19,36 @@ const Navbar = () => {
 					<div className='collapse navbar-collapse' id='navbarCollapse'>
 						<ul className='navbar-nav ml-auto'>
 							<li className='nav-item'>
-								<Link to='/' className='nav-link'>
+								<NavLink activeClassName='active' to='/' className='nav-link'>
 									Home
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav-item'>
-								<Link to='/About' className='nav-link'>
+								<NavLink
+									activeClassName='active'
+									to='/About'
+									className='nav-link'
+								>
 									About
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav-item'>
-								<Link to='/Featured' className='nav-link'>
+								<NavLink
+									activeClassName='active'
+									to='/Featured'
+									className='nav-link'
+								>
 									Featured
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav-item'>
-								<Link to='/Reservations' className='nav-link'>
+								<NavLink
+									activeClassName='active'
+									to='/Reservations'
+									className='nav-link'
+								>
 									Reservations
-								</Link>
+								</NavLink>
 							</li>
 							<li className='nav-item'>
 								<i className='fas icon-nav fa-duotone fa-umbrella-beach fa-2x'></i>
