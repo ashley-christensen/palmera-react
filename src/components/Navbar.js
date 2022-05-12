@@ -121,10 +121,7 @@ const Navbar = () => {
 										>
 											Cancel
 										</button>
-										<button
-											type='submit'
-											className='btn btn-primary btn-sm ml-1'
-										>
+										<button type='submit' className='btn btn-info btn-sm ml-1'>
 											Sign in
 										</button>
 									</div>
