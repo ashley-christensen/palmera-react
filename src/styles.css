@@ -137,9 +137,8 @@ span {
 	background: #f2f2f2;
 }
 .section-cards-featured {
-	/* width: 85vw; */
 	margin: 0 auto;
-	max-width: 930px;
+	max-width: 1030px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -147,6 +146,6 @@ span {
 	grid-row-gap: 30px;
 }
 
-/* .item-featured {
-
+/* .card-img-top:hover {
+	transform: scale(1);
 } */
