@@ -146,7 +146,22 @@ span {
 	grid-row-gap: 30px;
 }
 
+.btn-login:hover {
+	cursor: pointer;
+}
+
+/* Login Modal */
+
 .modal-header {
 	background-color: #17a2b8;
+	color: #fff;
+}
+
+.modal-close {
+	color: #fff;
+	font-weight: 200;
+}
+
+.modal-close:hover {
 	color: #fff;
 }

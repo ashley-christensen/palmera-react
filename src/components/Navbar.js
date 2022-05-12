@@ -10,7 +10,7 @@ const Navbar = () => {
 	}, []);
 	return (
 		<>
-			<nav className='navbar navbar-expand-sm navbar-dark bg-info'>
+			<nav className='navbar navbar-expand-lg navbar-dark bg-info'>
 				<div className='container'>
 					<NavLink to='/' className='navbar-brand'>
 						Palmera Resort and Spa
@@ -62,7 +62,12 @@ const Navbar = () => {
 						</ul>
 						{/* login */}
 						<span className='navbar-text ml-auto'>
-							<a role='button' data-toggle='modal' data-target='#loginModal'>
+							<a
+								role='button'
+								data-toggle='modal'
+								data-target='#loginModal'
+								className='btn-login'
+							>
 								<i className='fa fa-sign-in'></i> Login
 							</a>
 						</span>
@@ -76,7 +81,11 @@ const Navbar = () => {
 					<div className='modal-content'>
 						<div className='modal-header'>
 							<h3 className='modal-title'>Login</h3>
-							<button type='button' className='close' data-dismiss='modal'>
+							<button
+								type='button'
+								className='close modal-close'
+								data-dismiss='modal'
+							>
 								&times;
 							</button>
 						</div>
