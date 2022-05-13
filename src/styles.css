@@ -108,31 +108,10 @@ span {
 .underline {
 	margin-bottom: 20px;
 }
-/* Footer Styles */
 
-.footer-link {
-	color: #b9e3ea;
-	text-decoration: none;
-}
-
-.footer-link:hover {
-	color: #e8f6f8;
-	text-decoration: none;
-}
-.footer-info {
-	color: #b9e3ea;
-}
-
-.footer-contact {
-	color: #b9e3ea;
-}
-
-.copyright {
-	color: #b9e3ea;
-	font-size: 14;
-}
 
 /* Featured Page */
+
 .featured-list {
 	background: #f2f2f2;
 }
@@ -164,4 +143,33 @@ span {
 
 .modal-close:hover {
 	color: #fff;
+}
+
+/* .btn-more:hover {
+	cursor: pointer;
+	color: #000;
+} */
+
+/* Footer Styles */
+
+.footer-link {
+	color: #b9e3ea;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	color: #e8f6f8;
+	text-decoration: none;
+}
+.footer-info {
+	color: #b9e3ea;
+}
+
+.footer-contact {
+	color: #b9e3ea;
+}
+
+.copyright {
+	color: #b9e3ea;
+	font-size: 14;
 }
