@@ -14,7 +14,9 @@ const FeaturedItem = ({ ...item }) => {
 							<i className='fa-solid fa-dollar-sign'>{item.priceStr}</i>
 						</span>
 					</div>
-					<button className='btn btn-sm btn-color mt-2'>Learn more</button>
+					<button className='btn btn-more btn-sm btn-color mt-2'>
+						Learn more
+					</button>
 				</div>
 			</div>
 		</>
