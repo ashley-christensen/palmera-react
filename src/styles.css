@@ -63,6 +63,7 @@ body {
 
 .about-section {
 	padding: 60px;
+	min-height: 500px;
 }
 .icon {
 	font-size: 20px;
