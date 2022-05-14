@@ -35,8 +35,13 @@ const Footer = () => {
                 </Link>
               </div>
               <div>
-                <Link to='/Reservations' className='footer-link'>
-                  Reservations
+                <Link to='/Information' className='footer-link'>
+                  Information
+                </Link>
+              </div>
+               <div>
+                <Link to='/Booking' className='footer-link'>
+                  Booking
                 </Link>
               </div>
             </div>

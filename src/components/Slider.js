@@ -24,10 +24,10 @@ const Slider = () => {
                     Find your bliss on a private beach front with cabanas
                   </p>
                   <Link
-                    to='/Reservations'
+                    to='/Information'
                     className='btn btn-color slide-btn btn-lg'
                   >
-                    Reserve Your Stay
+                    More Info
                   </Link>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const Slider = () => {
                     Delight yourself in luxury suite and spa
                   </p>
                   <Link
-                    to='/Reservations'
+                    to='/Information'
                     className='btn btn-color slide-btn btn-lg'
                   >
                     More Info
@@ -59,7 +59,7 @@ const Slider = () => {
                     and more
                   </p>
                   <Link
-                    to='/Reservations'
+                    to='/Information'
                     className='btn btn-color slide-btn btn-lg'
                   >
                     More Info
