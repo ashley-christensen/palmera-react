@@ -50,10 +50,19 @@ const Navbar = () => {
 							<li className='nav-item'>
 								<NavLink
 									activeClassName='active'
-									to='/Reservations'
+									to='/Information'
 									className='nav-link'
 								>
-									Reservations
+									Information
+								</NavLink>
+							</li>
+							<li className='nav-item'>
+								<NavLink
+									activeClassName='active'
+									to='/Booking'
+									className='nav-link'
+								>
+									Booking
 								</NavLink>
 							</li>
 							<li className='nav-item'>

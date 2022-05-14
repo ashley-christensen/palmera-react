@@ -2,7 +2,8 @@ import React from 'react';
 import Slider from '../Slider';
 import About from './About';
 import FeaturedList from './FeaturedList';
-import Reservations from './Reservations';
+import Information from './Information';
+
 
 const Home = () => {
 	return (
@@ -11,7 +12,7 @@ const Home = () => {
 				<Slider />
 				<About />
 				<FeaturedList />
-				<Reservations />
+				<Information />
 			</div>
 		</>
 	);

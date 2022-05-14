@@ -1,12 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-const Reservations = () => {
+const Information = () => {
   return (
     <>
       <section className='section border-bottom py-5'>
         <div className='container'>
           <h3 className='font-weight-bold display-6 text-center'>
-            Reservations
+            Send Request for More Info
           </h3>
           <div className='card shadow'>
             <div className='card-body'>
@@ -52,7 +53,7 @@ const Reservations = () => {
                       type='button'
                       className='btn btn-color btn-lg w-100'
                     >
-                      Send Reservation Request
+                      Send Inquiry Request
                     </button>
                   </div>
                 </div>
@@ -63,6 +64,14 @@ const Reservations = () => {
                   <p>70 Main Street, Bay Island, Antigua</p>
                   <p>Phone: +1 268 333 9906</p>
                   <p>Email: PalmeraResort@info.com</p>
+                   <div>
+                  <Link
+                      to='/Booking'
+                      className='btn btn-success btn-lg'
+                    >
+                      Book Now!
+                    </Link>
+                </div>
                 </div>
               </div>
             </div>
@@ -73,4 +82,4 @@ const Reservations = () => {
   );
 };
 
-export default Reservations;
+export default Information;
