@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Information = () => {
   return (
     <>
-      <section className='section border-bottom py-5'>
+      <section className='section-info border-bottom py-5'>
         <div className='container'>
           <h3 className='font-weight-bold display-6 text-center'>
             Send Request for More Info
