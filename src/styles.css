@@ -248,7 +248,7 @@ span {
 
 .booking-form .form-group {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .booking-form .form-control {
@@ -317,7 +317,7 @@ span {
     color: #fff;
     background-color: #17a2b8;
     font-weight: 700;
-    padding: 14px 30px;
+    padding: 4px 10px;
     border-radius: 4px;
     border: none;
     -webkit-transition: 0.2s all;
@@ -336,7 +336,7 @@ span {
 
 .booking-cta h1 {
     font-size: 52px;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     color: #fff;
     font-weight: 700;
 }
@@ -346,6 +346,8 @@ span {
     color: rgba(255, 255, 255, 0.8);
 }
 
-
+.table-bill {
+	border: 1px solid red;
+}
 
 

@@ -41,17 +41,7 @@ const Booking = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                {/* <div className="col-sm-4">
-                                    <div className="form-group">
-                                        <span className="form-label">Rooms</span>
-                                        <select className="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
-                                        <span className="select-arrow"></span>
-                                    </div>
-                                </div> */}
+                          
                                 <div className="col-sm-4">
                                     <div className="form-group">
                                         <span className="form-label">Guests</span>
@@ -63,17 +53,50 @@ const Booking = () => {
                                         <span className="select-arrow"></span>
                                     </div>
                                 </div>
-                                {/* <div className="col-sm-4">
-                                    <div className="form-group">
-                                        <span className="form-label">Children</span>
-                                        <select className="form-control">
-                                            <option>0</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                        </select>
-                                        <span className="select-arrow"></span>
-                                    </div>
-                                </div> */}
+                                <div className="row">
+                                 <div className="col">
+                                    <table class="table-bill table-responsive table-striped p-3">
+                                       <tbody>
+                                           <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                           </tr>
+                                            <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                            </tr>
+                                             <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                            </tr>
+                                            <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                           </tr>
+                                            <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                            </tr>
+                                             <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                            </tr>
+                                            <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                           </tr>
+                                            <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                            </tr>
+                                             <tr>
+                                             <th scope="row">January</th>
+                                              <td>$13,555.00</td>
+                                            </tr>  
+                                     </tbody>   
+                                  </table> 
+                                 </div>
+                                </div> 
                             </div>
                             <div className="form-btn">
                                 <button className="submit-btn">Check availability</button>
