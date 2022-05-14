@@ -1,6 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const Booking = () => {
+	useEffect(() => {
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	}, []);
+
   return (
     <>
     <div id="booking" className="section-booking">
@@ -53,8 +59,44 @@ const Booking = () => {
                                         <span className="select-arrow"></span>
                                     </div>
                                 </div>
-                                <div className="row">
-                                 <div className="col">
+
+                            </div>
+                            <div className="form-btn">
+                                <button type="button" className="submit-btn">Check availability</button>
+                                
+                            </div>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/* modal button? */}
+              <button type="button" className="submit-btn" data-toggle="modal" data-target="#billingModal">Check availability</button>
+{/* modal button? */}
+
+{/* modal beginning window */}
+
+            <div id='billingModal' className='modal fade' role='dialog'>
+				<div className='modal-dialog' role='document'>
+					<div className='modal-content'>
+						<div className='modal-header'>
+							<h3 className='modal-title'>Login</h3>
+							<button
+								type='button'
+								className='close modal-close'
+								data-dismiss='modal'
+							>
+								&times;
+							</button>
+						</div>
+						<div className='modal-body'>
+							<div className='container-fluid'>
+								<div className="row">
+									<div className="col">
                                     <table class="table-bill table-responsive table-striped p-3">
                                        <tbody>
                                            <tr>
@@ -96,18 +138,14 @@ const Booking = () => {
                                      </tbody>   
                                   </table> 
                                  </div>
-                                </div> 
-                            </div>
-                            <div className="form-btn">
-                                <button className="submit-btn">Check availability</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                                </div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+   {/* modal end window */}
     </>
   )
 }

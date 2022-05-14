@@ -76,7 +76,7 @@ const Navbar = () => {
 								data-toggle='modal'
 								data-target='#loginModal'
 								className='btn-login'
-							>
+								>
 								<i className='fa fa-sign-in'></i> Login
 							</a>
 						</span>
