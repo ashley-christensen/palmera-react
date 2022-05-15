@@ -1,11 +1,12 @@
-import React, {useEffect} from 'react'
-import $ from 'jquery'
+import React, {useEffect} from 'react';
+import Billing from './Billing';
+import $ from 'jquery';
 
 const Booking = () => {
 	useEffect(() => {
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip();
-		});
+    $(function () {
+     $('[data-toggle="tooltip"]').tooltip();
+    });
 	}, []);
 
   return (
@@ -48,7 +49,6 @@ const Booking = () => {
                                 </div>
                             </div>
                             <div className="row">
-                          
                                 <div className="col-sm-4">
                                     <div className="form-group">
                                         <span className="form-label">Guests</span>
@@ -60,83 +60,20 @@ const Booking = () => {
                                         <span className="select-arrow"></span>
                                     </div>
                                 </div>
-
                             </div>
                             <div className="form-btn">
                                 <button type="button" className="submit-btn">Reserve</button>
-                                <button className="submit-btn"data-toggle="modal" data-target="#billModal">View Bill</button>
-                               
+                                <button className="submit-btn ml-3"data-toggle="modal" data-target="#billModal">View Bill</button>
                             </div>
-                           
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-{/* Start Modal for Billing  */}
-			<div id='billModal' className='modal fade' role='dialog'>
-				<div className='modal-dialog' role='document'>
-					<div className='modal-content'>
-						<div className='modal-header'>
-							<h3 className='modal-title'>Invoice Summary</h3>
-							<button
-								type='button'
-								className='close modal-close'
-								data-dismiss='modal'
-							>
-								&times;
-							</button>
-						</div>
-						<div className='modal-body'>
-							<div className='container-fluid'>
-								 <table class="table-bill table-responsive table-striped p-3">
-           <tbody>
-            <tr>
-              <th scope="row">January</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">February</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">March</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">April</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">May</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">June</th>
-                 <td>$13,555.00</td>
-            </tr> 
-            <tr>
-              <th scope="row">July</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">August</th>
-                 <td>$13,555.00</td>
-            </tr>
-            <tr>
-              <th scope="row">September</th>
-                 <td>$13,555.00</td>
-            </tr>                         
-           </tbody>   
-         </table> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* End Modal for Billing  */}
+         </div>
+       </div>
+     </div>
+
+    <Billing/>
     </>
   )
 }
