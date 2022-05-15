@@ -4,9 +4,9 @@ import $ from 'jquery';
 
 const Navbar = () => {
 	useEffect(() => {
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip();
-		});
+				$(function () {
+					$('[data-toggle="tooltip"]').tooltip();
+				});
 	}, []);
 	return (
 		<>

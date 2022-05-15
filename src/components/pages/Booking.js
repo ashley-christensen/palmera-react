@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import $ from 'jquery'
 
 const Booking = () => {
 	useEffect(() => {
@@ -62,8 +63,9 @@ const Booking = () => {
 
                             </div>
                             <div className="form-btn">
-                                <button type="button" className="submit-btn">Check availability</button>
-                                
+                                <button type="button" className="submit-btn">Reserve</button>
+                                <button className="submit-btn"data-toggle="modal" data-target="#billModal">View Bill</button>
+                               
                             </div>
                            
                         </form>
@@ -73,18 +75,12 @@ const Booking = () => {
         </div>
     </div>
 </div>
-
-{/* modal button? */}
-              <button type="button" className="submit-btn" data-toggle="modal" data-target="#billingModal">Check availability</button>
-{/* modal button? */}
-
-{/* modal beginning window */}
-
-            <div id='billingModal' className='modal fade' role='dialog'>
+{/* Start Modal for Billing  */}
+			<div id='billModal' className='modal fade' role='dialog'>
 				<div className='modal-dialog' role='document'>
 					<div className='modal-content'>
 						<div className='modal-header'>
-							<h3 className='modal-title'>Login</h3>
+							<h3 className='modal-title'>Invoice Summary</h3>
 							<button
 								type='button'
 								className='close modal-close'
@@ -95,57 +91,52 @@ const Booking = () => {
 						</div>
 						<div className='modal-body'>
 							<div className='container-fluid'>
-								<div className="row">
-									<div className="col">
-                                    <table class="table-bill table-responsive table-striped p-3">
-                                       <tbody>
-                                           <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                           </tr>
-                                            <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                            </tr>
-                                             <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                            </tr>
-                                            <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                           </tr>
-                                            <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                            </tr>
-                                             <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                            </tr>
-                                            <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                           </tr>
-                                            <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                            </tr>
-                                             <tr>
-                                             <th scope="row">January</th>
-                                              <td>$13,555.00</td>
-                                            </tr>  
-                                     </tbody>   
-                                  </table> 
-                                 </div>
-                                </div>
-								</form>
+								 <table class="table-bill table-responsive table-striped p-3">
+           <tbody>
+            <tr>
+              <th scope="row">January</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">February</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">March</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">April</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">May</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">June</th>
+                 <td>$13,555.00</td>
+            </tr> 
+            <tr>
+              <th scope="row">July</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">August</th>
+                 <td>$13,555.00</td>
+            </tr>
+            <tr>
+              <th scope="row">September</th>
+                 <td>$13,555.00</td>
+            </tr>                         
+           </tbody>   
+         </table> 
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-   {/* modal end window */}
+			{/* End Modal for Billing  */}
     </>
   )
 }
