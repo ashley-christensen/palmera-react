@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
+import RoomDetails from './RoomDetails';
 import Billing from './Billing';
+import DateSelector from './DateSelector';
 import $ from 'jquery';
 
 const Booking = () => {
@@ -26,29 +28,9 @@ const Booking = () => {
                 <div className="col-md-4 col-md-pull-7">
                     <div className="booking-form">
                         <form>
-                            <div className="form-group">
-                                <span className="form-label">Room Type</span>
-                                        <select className="form-control">
-                                            <option> Select Package</option>
-                                            <option> Romantic or Spa ( $7.895 ) </option>
-                                            <option> Beach ( $8.895 )</option>
-                                        </select>
-                            </div>
-                            <div className="row">
-                                <div className="col-sm-6">
-                                    <div className="form-group">
-                                        <span className="form-label">Check In</span>
-                                        <input className="form-control" type="date" required/>
-                                    </div>
-                                </div>
-                                <div className="col-sm-6">
-                                    <div className="form-group">
-                                        <span className="form-label">Check out</span>
-                                        <input className="form-control" type="date" required/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
+                      <RoomDetails/>    
+                      <DateSelector/>
+                            <div className="row mb-4">
                                 <div className="col-sm-4">
                                     <div className="form-group">
                                         <span className="form-label">Guests</span>
@@ -63,7 +45,7 @@ const Booking = () => {
                             </div>
                             <div className="form-btn">
                                 <button type="button" className="submit-btn">Reserve</button>
-                                <button className="submit-btn ml-3"data-toggle="modal" data-target="#billModal">View Bill</button>
+                                <button className="submit-btn ml-2"data-toggle="modal" data-target="#billModal">View Bill</button>
                             </div>
                         </form>
                     </div>
