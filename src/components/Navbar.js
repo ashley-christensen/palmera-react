@@ -3,11 +3,13 @@ import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
 const Navbar = () => {
+
 	useEffect(() => {
 				$(function () {
 					$('[data-toggle="tooltip"]').tooltip();
 				});
 	}, []);
+	
 	return (
 		<>
 			<nav className='navbar navbar-expand-lg navbar-dark bg-info'>

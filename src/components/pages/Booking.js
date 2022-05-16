@@ -5,6 +5,15 @@ import DateSelector from './DateSelector';
 import $ from 'jquery';
 
 const Booking = () => {
+
+ const dataDiffInDays = (a, b) => {
+   const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+   const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+
+   
+ };
+
+
 	useEffect(() => {
     $(function () {
      $('[data-toggle="tooltip"]').tooltip();
