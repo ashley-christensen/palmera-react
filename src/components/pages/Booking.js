@@ -83,12 +83,6 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
               <div className="col-md-4 col-md-pull-7">
                 <div className="booking-form">
                   <form>
-                    <RoomDetails
-                      occupants={this.state.occupants}
-                      roomType={this.state.roomType}
-                      onRoomTypechange={this.state.onRoomTypechange}
-                      onOccupantsChange={this.onOccupantsChange}
-                    />    
                     <DateSelector
                       checkinDate={this.state.checkinDate}
                       checkoutDate={this.state.checkoutDate}
@@ -97,22 +91,15 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
                       onCheckInChange={this.onCheckInChange}
                       onCheckOutChange={this.onCheckOutChange}
                     />
-           <div className="row mb-4">
-             <div className="col-sm-4">
-                  <div className="form-group">
-                    <span className="form-label">Guests</span>
-                     <select className="form-control">
-                       <option>1</option>
-                       <option>2</option>
-                       <option>3</option>
-                      </select>
-                     <span className="select-arrow"></span>
-                  </div>
-              </div>
-           </div>
+                    <RoomDetails
+                      occupants={this.state.occupants}
+                      roomType={this.state.roomType}
+                      onRoomTypechange={this.state.onRoomTypechange}
+                      onOccupantsChange={this.onOccupantsChange}
+                    />  
                  <div className="form-btn">
                      <button type="button" className="submit-btn">Reserve</button>
-                     <button className="submit-btn ml-2" data-toggle="modal" data-target="#billModal">View Bill</button>
+                     <button className="submit-btn ml-2" data-toggle="modal" data-target={!this.state.invalidRange ? '#billModal' : '#rangeModal'}>View Bill</button>
                   </div>
                  </form>
                 </div>
@@ -121,13 +108,35 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
         </div>
      </div>
     </div>
-    {!this.state.invalidRange && (
       <Billing
       roomType={this.state.roomType}
       totalDays={this.state.totalDays}
       occupants={this.state.occupants}
     />
-    )}
+    
+{/* Start range modal */}
+    <div id='rangeModal' className='modal fade' role='dialog'>
+				<div className='modal-dialog' role='document'>
+					<div className='modal-content'>
+						<div className='modal-header'>
+							<h3 className='modal-title'>Billing Error</h3>
+							<button
+								type='button'
+								className='close modal-close'
+								data-dismiss='modal'
+							>
+								&times;
+							</button>
+						</div>
+						<div className='modal-body'>
+							<div className='container-fluid'>
+								<p>Please go back and enter valid date range</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+      {/* End range modal */}
 
   </>
   )
