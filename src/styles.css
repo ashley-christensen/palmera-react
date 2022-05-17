@@ -238,6 +238,10 @@ span {
     background: rgba(47, 103, 177, 0.6);
 }
 
+.input-label {
+	display: none
+}
+
 .booking-form {
     background-color: #fff;
     padding: 50px 20px;
@@ -319,6 +323,8 @@ span {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
 }
+
+
 
 
 /* Old HTML datepicker styling */

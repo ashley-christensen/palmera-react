@@ -96,7 +96,6 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
                       inValidRange={this.state.invalidRange}
                       onCheckInChange={this.onCheckInChange}
                       onCheckOutChange={this.onCheckOutChange}
-                    
                     />
            <div className="row mb-4">
              <div className="col-sm-4">
