@@ -1,4 +1,4 @@
-import React, { useEffect, Component} from 'react';
+import React, { Component} from 'react';
 import RoomDetails from './RoomDetails';
 import Billing from './Billing';
 import DateSelector from './DateSelector';
@@ -86,7 +86,7 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
                     <RoomDetails
                       occupants={this.state.occupants}
                       roomType={this.state.roomType}
-                      onRoomTypechange={this.onRoomTypechange}
+                      onRoomTypechange={this.state.onRoomTypechange}
                       onOccupantsChange={this.onOccupantsChange}
                     />    
                     <DateSelector
@@ -113,7 +113,7 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
            </div>
                  <div className="form-btn">
                      <button type="button" className="submit-btn">Reserve</button>
-                     <button className="submit-btn ml-2"data-toggle="modal" data-target="#billModal">View Bill</button>
+                     <button className="submit-btn ml-2" data-toggle="modal" data-target="#billModal">View Bill</button>
                   </div>
                  </form>
                 </div>
@@ -122,14 +122,14 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
         </div>
      </div>
     </div>
-    {
-      !this.state.invalidRange && (<Billing
+    {!this.state.invalidRange && (
+      <Billing
       roomType={this.state.roomType}
       totalDays={this.state.totalDays}
       occupants={this.state.occupants}
-    />)
-    }
-    
+    />
+    )}
+
   </>
   )
   }

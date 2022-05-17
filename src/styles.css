@@ -262,47 +262,21 @@ span {
     font-size: 14px;
 }
 
-.booking-form .form-control::-webkit-input-placeholder {
-    color: rgba(62, 72, 92, 0.3);
+.react-datepicker__year-dropdown .react-datepicker__year-option:first-child::before {
+  content: "\25B2";
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  margin: auto;
 }
 
-.booking-form .form-control:-ms-input-placeholder {
-    color: rgba(62, 72, 92, 0.3);
+.react-datepicker__year-dropdown::after {
+  content: "\25BC";
+  display: block;
+  position: relative;
+  bottom: 15%;
 }
-
-.booking-form .form-control::placeholder {
-    color: rgba(62, 72, 92, 0.3);
-}
-
-.booking-form input[type="date"].form-control:invalid {
-    color: rgba(62, 72, 92, 0.3);
-}
-
-.booking-form select.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-.booking-form select.form-control+.select-arrow {
-    position: absolute;
-    right: 0px;
-    bottom: 4px;
-    width: 32px;
-    line-height: 32px;
-    height: 32px;
-    text-align: center;
-    pointer-events: none;
-    color: rgba(62, 72, 92, 0.3);
-    font-size: 14px;
-}
-
- .booking-form select.form-control+.select-arrow:after {
-    content: '\279C';
-    display: block;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-} 
+ 
 
 .booking-form .form-label {
     display: inline-block;
@@ -346,9 +320,53 @@ span {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.table-bill {
-	
 
+/* Old HTML datepicker styling */
+
+/* .booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 4px;
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(62, 72, 92, 0.3);
+    font-size: 14px;
 }
 
 
+.booking-form input[type="date"].form-control:invalid {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+ .booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+} 
+  */
