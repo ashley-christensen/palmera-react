@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-const DateSelector = () => {
-  return (
-    <div>
+class DateSelector extends Component {
+render() {
+return (
+    <>
      <div className="row">
         <div className="col-sm-6">
           <div className="form-group">
@@ -17,8 +18,10 @@ const DateSelector = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
+    }
+    
 }
 
 export default DateSelector

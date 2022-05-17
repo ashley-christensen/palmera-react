@@ -2,7 +2,7 @@ import React, { useEffect, Component} from 'react';
 import RoomDetails from './RoomDetails';
 import Billing from './Billing';
 import DateSelector from './DateSelector';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 const _MS_PER_DAY = 24 * 60 * 60 * 1000
  const dateDiffInDays = (a, b) => {
@@ -12,12 +12,12 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
  };
 
  class Booking extends Component {
-   constructor(props){
+   constructor(props) {
      super(props);
      const today = new Date();
      const checkout = new Date();
      checkout.setDate(today.getDate() + 1); //minimum nights is 1
-     this.state={
+     this.state = {
        checkinDate: today,
        checkoutDate: checkout,
        occupants: 1, //initial occupents is 1
@@ -61,14 +61,14 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
     })
    }
    
-	componentDidMount() {
-     $('[data-toggle="tooltip"]').tooltip();
-	};
+	// componentDidMount() {
+  //    $('[data-toggle="tooltip"]').tooltip();
+	// };
 
   render() {
-    return (
-    <>
-    <div id="booking" className="section-booking">
+  return (
+  <>
+   <div id="booking" className="section-booking">
     <div className="section-center">
         <div className="container">
            <div className="row">
@@ -76,7 +76,7 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
                <div className="booking-cta">
                  <h1>Make your Reservation</h1>
                  <p>
-                  Please note that special discounts apply to Luxury Spa Week and Romantic Getaway. Maximum stay applies. For other inquiries please call us or fill out our reservation inquiries form. 
+                  Please note that special accommodations apply to Luxury Spa Week and Romantic Getaway. Discount applies for stays of five or more nights, or by request for entire resort rental. Please call us or fill out our reservation inquiries form for further assistance. 
                  </p>
                </div>
               </div>
@@ -96,6 +96,7 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
                       inValidRange={this.state.invalidRange}
                       onCheckInChange={this.onCheckInChange}
                       onCheckOutChange={this.onCheckOutChange}
+                    
                     />
            <div className="row mb-4">
              <div className="col-sm-4">
@@ -110,24 +111,26 @@ const _MS_PER_DAY = 24 * 60 * 60 * 1000
                   </div>
               </div>
            </div>
-                   <div className="form-btn">
+                 <div className="form-btn">
                      <button type="button" className="submit-btn">Reserve</button>
                      <button className="submit-btn ml-2"data-toggle="modal" data-target="#billModal">View Bill</button>
-                    </div>
-                  </form>
-                 </div>
+                  </div>
+                 </form>
+                </div>
               </div>
            </div>
         </div>
      </div>
-     </div>
-
-    <Billing
+    </div>
+    {
+      !this.state.invalidRange && (<Billing
       roomType={this.state.roomType}
       totalDays={this.state.totalDays}
       occupants={this.state.occupants}
-    />
-    </>
+    />)
+    }
+    
+  </>
   )
   }
   
