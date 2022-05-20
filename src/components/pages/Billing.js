@@ -15,7 +15,7 @@ class Billing extends Component {
 
   }
   static getDerivedStateFromProps(props, state) {
-    //destructure properties from Booking component
+    // properties from Booking component
     const { roomType, totalDays, occupants } = props;
     //calculations needed from static state/props
     const roomCharge = roomType === "Standard" ? 7895 : 8895;
@@ -61,7 +61,7 @@ class Billing extends Component {
               <div className='modal-body'>
                 <div className='container-fluid'>
                   <table class="table-bill table-responsive table-striped p-3">
-                    <tbody>
+                    <tbody className="table">
                       <tr>
                         <td>Room Charges</td>
                         <td>{this.state.roomCharge} USD</td>

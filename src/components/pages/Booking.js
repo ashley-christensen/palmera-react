@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import RoomDetails from './RoomDetails';
+// import RoomDetails from './RoomDetails';
 import Billing from './Billing';
 import DateSelector from './DateSelector';
-
 
 const _MS_PER_DAY = 24 * 60 * 60 * 1000;
 const dateDiffInDays = (a, b) => {
@@ -62,7 +61,6 @@ class Booking extends Component {
   };
 
 
-
   render() {
     return (
       <>
@@ -89,15 +87,15 @@ class Booking extends Component {
                         onCheckInChange={this.onCheckInChange}
                         onCheckOutChange={this.onCheckOutChange}
                       />
-                      <RoomDetails
+                      {/* <RoomDetails
                         occupants={this.state.occupants}
                         roomType={this.state.roomType}
                         onOccupantsChange={this.onOccupantsChange}
                         onRoomTypechange={this.onRoomTypeChange}
-                        
-                      />
+
+                      /> */}
                       <div className="form-btn">
-                        <button type="button" className="submit-btn">Reserve</button>
+                        <button type="button" className="submit-btn bg-success" data-toggle="modal" data-target="#reserveModal">Reserve</button>
                         <button className="submit-btn ml-2" data-toggle="modal" data-target="#billModal">View Bill</button>
                       </div>
                     </form>
@@ -112,23 +110,11 @@ class Booking extends Component {
           totalDays={this.state.totalDays}
           occupants={this.state.occupants}
         />
-      </>
-    );
-  }
-
-}
-
-export default Booking;
-
-
-
-
-{/* Start range modal */ }
-{/* <div id='rangeModal' className='modal fade' role='dialog'>
+        <div id='reserveModal' className='modal fade' role='dialog'>
           <div className='modal-dialog' role='document'>
             <div className='modal-content'>
               <div className='modal-header'>
-                <h3 className='modal-title'>Billing Error</h3>
+                <h3 className='modal-title'>Reservation Sent!</h3>
                 <button
                   type='button'
                   className='close modal-close'
@@ -139,10 +125,18 @@ export default Booking;
               </div>
               <div className='modal-body'>
                 <div className='container-fluid'>
-                  <p>Please go back and enter valid date range</p>
+                  <p>A member of our team will contact you soon</p>
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
-{/* End range modal */ }
+        </div>
+      </>
+    );
+  }
+
+}
+
+export default Booking;
+
+
