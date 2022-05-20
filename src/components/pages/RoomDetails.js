@@ -1,31 +1,73 @@
-import React from 'react'
+import React from 'react';
+import Select from 'react-select';
 
-const RoomDetails = () => {
+
+const roomTypeOptions = [
+  { value: 'Standard', label: 'Standard' },
+  { value: 'Delux', label: 'Delux' }
+];
+
+
+const occupantsOptions = [
+  { value: 1, label: '1' },
+  { value: 2, label: '2' },
+  { value: 3, label: '3' },
+  { value: 4, label: '4' },
+];
+
+
+const RoomDetails = (props) => {
+  // let {
+  //   roomType,
+  //   onRoomTypeChange,
+  //   occupants,
+  //   onOccupantsChange
+
+  // } = props;
+
+
+
   return (
     <div>
       <div className="form-group">
-        <span className="form-label">Room Type</span>
-         <select className="form-control">
-           <option value="">Select Package</option>
-           <option> Romantic or Spa ( $7.895 ) </option>
-           <option> Beach ( $8.895 )</option>
-         </select>
-      </div>
-       <div className="row mb-4">
-             <div className="col-sm-4">
-                  <div className="form-group">
-                    <span className="form-label">Guests</span>
-                     <select className="form-control">
-                       <option>1</option>
-                       <option>2</option>
-                       <option>3</option>
-                      </select>
-                     <span className="select-arrow"></span>
-                  </div>
-              </div>
-        </div>
-    </div>
-  )
-}
 
-export default RoomDetails
+
+        {/* //add Select back here if needed */}
+        {/* <label className="select-label">Room Type</label>
+        <Select
+          selected={roomType}
+          onChange={onRoomTypeChange}
+          options={roomTypeOptions}
+          theme={theme}
+        />
+        <span>{roomType}</span>
+        <label className="select-label">Guests</label>
+        <Select
+          options={occupantsOptions}
+          theme={theme}
+
+        /> */}
+        {/* // add Select back here if needed */}
+      </div >
+    </div >
+  );
+};
+
+export default RoomDetails;
+
+
+{/* //theme styles for SELECT REACT COMPONENT */ }
+const theme = theme => ({
+
+  ...theme,
+  colors: {
+    ...theme.colors,
+    primary: '#17a2b8',
+    borderRadius: 4,
+    controlHeight: 38,
+    baseUnit: 4,
+  }
+
+});
+{/* //end theme styles for SELECT react component */ }
+

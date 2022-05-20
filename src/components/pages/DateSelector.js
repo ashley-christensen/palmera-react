@@ -2,65 +2,66 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import PropTypes from 'prop-types';
+import {PropTypes} from 'prop-types';
 
 const DateSelector = (props) => {
 
-    let {
-    checkinDate, 
+  let {
+    checkinDate,
     checkoutDate,
     totalDays,
-    invalidRange, 
+    invalidRange,
     onCheckInChange,
     onCheckOutChange,
-    } = props;
+  } = props;
 
   return (
     <>
-     <div className="row">
-           <div className="col-sm-6">
-                 <div className="form-group">
-                    <span className="form-label">Check In</span>
-                          <input className="input-label" required/>  
-                          <DatePicker
-                            className="form-control"
-                            selected={checkinDate}
-                            onChange={onCheckInChange}
-                            showYearDropdown
-                            dateFormatCalendar="MMMM"
-                            yearDropdownItemNumber={5}
-                            scrollableYearDropdown
-                         /> 
-                 </div>
-           </div>
-           <div className="col-sm-6">
-                  <div className="form-group">
-                    <span className="form-label">Check out</span>
-                        <DatePicker
-                            className="form-control"
-                            selected={checkoutDate}
-                            onChange={onCheckOutChange}
-                            showYearDropdown
-                            dateFormatCalendar="MMMM"
-                            yearDropdownItemNumber={15}
-                            scrollableYearDropdown
-                        />
-                      <span className="form-label">{totalDays} Nights</span>
-                  </div>               
-            </div>
-     </div>
+      <div className="row">
+        <div className="col-sm-6">
+          <div className="form-group">
+            <span className="form-label">Check In</span>
+            <input className="input-label" required />
+            <DatePicker
+              className="form-control"
+              selected={checkinDate}
+              onChange={onCheckInChange}
+              showYearDropdown
+              dateFormatCalendar="MMMM"
+              yearDropdownItemNumber={5}
+              scrollableYearDropdown
+            />
+          </div>
+        </div>
+        <div className="col-sm-6">
+          <div className="form-group">
+            <span className="form-label">Check out</span>
+            <DatePicker
+              className="form-control"
+              selected={checkoutDate}
+              onChange={onCheckOutChange}
+              showYearDropdown
+              dateFormatCalendar="MMMM"
+              yearDropdownItemNumber={15}
+              scrollableYearDropdown
+            />
+            <span className="form-label">{totalDays} Nights</span>
+            {invalidRange && <p>Invalid Range</p>}
+          </div>
+        </div>
+      </div>
     </>
-    
-  )
+
+  );
 };
 
-    DateSelector.propTypes={
-     checkinDate : PropTypes.instanceOf(Date).isRequired,
-     checkoutDate : PropTypes.instanceOf(Date).isRequired,
-     onCheckInChange : PropTypes.func.isRequired,
-     onCheckOutChange : PropTypes.func.isRequired,
-     totalDays : PropTypes.number.isRequired
+DateSelector.propTypes = {
+  checkinDate: PropTypes.instanceOf(Date).isRequired,
+  checkoutDate: PropTypes.instanceOf(Date).isRequired,
+  onCheckInChange: PropTypes.func.isRequired,
+  onCheckOutChange: PropTypes.func.isRequired,
+  totalDays: PropTypes.number.isRequired
 
- }
+};
 
-export default DateSelector 
+export default DateSelector; 
