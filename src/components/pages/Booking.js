@@ -19,7 +19,7 @@ class Booking extends Component {
     this.state = {
       checkinDate: today,
       checkoutDate: checkout,
-      occupants: 1, //initial occupents is 1
+      occupants: 1, //initial occupants is 1
       roomType: "Standard"
     };
   }

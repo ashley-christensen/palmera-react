@@ -2,7 +2,7 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import {PropTypes} from 'prop-types';
+import { PropTypes } from 'prop-types';
 
 const DateSelector = (props) => {
 
@@ -45,8 +45,8 @@ const DateSelector = (props) => {
               yearDropdownItemNumber={15}
               scrollableYearDropdown
             />
-            <span className="form-label">{totalDays} Nights</span>
-            {invalidRange && <p>Invalid Range</p>}
+            <span className="form-label">Nights : {totalDays}</span>
+            {/* {invalidRange && <p>Invalid Range</p>} */}
           </div>
         </div>
       </div>
