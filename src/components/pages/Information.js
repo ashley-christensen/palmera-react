@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Information = () => {
   return (
@@ -64,14 +64,14 @@ const Information = () => {
                   <p>70 Main Street, Bay Island, Antigua</p>
                   <p>Phone: +1 268 333 9906</p>
                   <p>Email: PalmeraResort@info.com</p>
-                   <div>
-                  <Link
+                  <div>
+                    <Link
                       to='/Booking'
                       className='btn btn-success btn-lg'
                     >
                       Book Now!
                     </Link>
-                </div>
+                  </div>
                 </div>
               </div>
             </div>
