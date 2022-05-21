@@ -69,6 +69,11 @@ body {
 .about-section {
 	padding: 80px;
 }
+.section-info {
+	padding: 80px;
+	font-size: 14px;
+	line-height: 16px;
+}
 
 .icon {
 	font-size: 20px;
@@ -200,12 +205,6 @@ span {
 .copyright {
 	color: #b9e3ea;
 	font-size: 14;
-}
-
-.section-info {
-	/* text-transform: uppercase; */
-	font-size: 14px;
-	line-height: 16px;
 }
 
 /* Booking */
