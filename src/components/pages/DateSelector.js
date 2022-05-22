@@ -10,7 +10,7 @@ const DateSelector = (props) => {
     checkinDate,
     checkoutDate,
     totalDays,
-    invalidRange,
+    // invalidRange,
     onCheckInChange,
     onCheckOutChange,
   } = props;

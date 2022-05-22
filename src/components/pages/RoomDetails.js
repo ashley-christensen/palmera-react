@@ -1,64 +1,59 @@
 import React from 'react';
 import Select from 'react-select';
 
-
-const roomTypeOptions = [
+const roomOptions = [
   { value: 'Standard', label: 'Standard' },
   { value: 'Delux', label: 'Delux' }
 ];
 
-
-const occupantsOptions = [
+const occupantOptions = [
   { value: 1, label: '1' },
   { value: 2, label: '2' },
   { value: 3, label: '3' },
   { value: 4, label: '4' },
 ];
 
-
 const RoomDetails = (props) => {
-  // let {
-  //   roomType,
-  //   onRoomTypeChange,
-  //   occupants,
-  //   onOccupantsChange
+  let {
+    roomType,
+    onRoomTypeChange,
+    occupants,
+    onOccupantsChange
+  } = props;
 
-  // } = props;
-
-
+  const handleChange = (e) => {
+    onRoomTypeChange(e.target.value);
+  };
 
   return (
     <div>
       <div className="form-group">
-
-
-        {/* //add Select back here if needed */}
-        {/* <label className="select-label">Room Type</label>
+        <label className="select-label">Room Type: {roomType} </label>
         <Select
-          selected={roomType}
-          onChange={onRoomTypeChange}
-          options={roomTypeOptions}
+          value={roomType}
+          onChange={handleChange}
+          options={roomOptions}
           theme={theme}
         />
-        <span>{roomType}</span>
-        <label className="select-label">Guests</label>
-        <Select
-          options={occupantsOptions}
-          theme={theme}
 
-        /> */}
-        {/* // add Select back here if needed */}
+        <label className="select-label">Guests: {occupants}</label>
+        <Select
+          value={occupants}
+          onDatachange={onOccupantsChange}
+          options={occupantOptions}
+          theme={theme}
+        />
+
       </div >
-    </div >
+    </div>
   );
 };
 
 export default RoomDetails;
 
 
-{/* //theme styles for SELECT REACT COMPONENT */ }
+{/* //styles for SELECT */ }
 const theme = theme => ({
-
   ...theme,
   colors: {
     ...theme.colors,
@@ -67,7 +62,6 @@ const theme = theme => ({
     controlHeight: 38,
     baseUnit: 4,
   }
-
 });
-{/* //end theme styles for SELECT react component */ }
+
 

@@ -18,17 +18,16 @@ class Billing extends Component {
     // properties from Booking component
     const { roomType, totalDays, occupants } = props;
     //calculations needed from static state/props
-    const roomCharge = roomType === "Standard" ? 7895 : 8895;
+    const roomCharge = roomType === 'Standard' ? 275 : 395;
     const occupantCharges = occupants === 1 ? 0 : (occupants - 1) * 300;
     const totalRoomCharges = totalDays * roomCharge;
     const totalOccupantCharges = totalDays * occupantCharges;
-
     const discount = totalDays >= 5 ? 15 : 0;
     const grandTotal = Math.ceil(
       totalRoomCharges - (totalRoomCharges - discount) / 100.0
     );
-
     const afterTax = Math.ceil((totalOccupantCharges + grandTotal * 1.18));
+
     return {
       roomCharge,
       occupantCharges,
@@ -79,6 +78,18 @@ class Billing extends Component {
                         <td>{this.state.discount} USD</td>
                       </tr>
                       <tr>
+                        <tr>
+                          <td>Occupants</td>
+                          <td>{this.props.occupants}</td>
+                        </tr>
+                        <tr>
+                          <td>Occupant Charges</td>
+                          <td>{this.state.occupantCharges} USD per day</td>
+                        </tr>
+                        <tr>
+                          <td>Occupant Charges</td>
+                          <td>{this.state.totalOccupantCharges} USD</td>
+                        </tr>
                         <td>Grand Total With Discount</td>
                         <td>{this.state.grandTotal} USD</td>
                       </tr>
@@ -102,16 +113,4 @@ class Billing extends Component {
 
 export default Billing;
 
-{/*
-                      <tr>
-                        <td>Occupants</td>
-                        <td>{this.props.occupants}</td>
-                      </tr>
-                       <tr>
-                        <td>Occupant Charges</td>
-                        <td>{this.state.occupantCharges} USD per day</td>
-                      </tr>
-                      <tr>
-                        <td>Occupant Charges</td>
-                        <td>{this.state.totalOccupantCharges} USD</td>
-                      </tr> */}
+

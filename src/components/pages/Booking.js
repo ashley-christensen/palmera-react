@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import RoomDetails from './RoomDetails';
+import RoomDetails from './RoomDetails';
 import Billing from './Billing';
 import DateSelector from './DateSelector';
 
@@ -20,7 +20,7 @@ class Booking extends Component {
       checkinDate: today,
       checkoutDate: checkout,
       occupants: 1, //initial occupants is 1
-      roomType: "Standard"
+      roomType: 'Standard'
     };
   }
 
@@ -87,13 +87,13 @@ class Booking extends Component {
                         onCheckInChange={this.onCheckInChange}
                         onCheckOutChange={this.onCheckOutChange}
                       />
-                      {/* <RoomDetails
+                      <RoomDetails
                         occupants={this.state.occupants}
                         roomType={this.state.roomType}
                         onOccupantsChange={this.onOccupantsChange}
                         onRoomTypechange={this.onRoomTypeChange}
 
-                      /> */}
+                      />
                       <div className="form-btn">
                         <button type="button" className="submit-btn bg-success" data-toggle="modal" data-target="#reserveModal">Reserve</button>
                         <button className="submit-btn ml-2" data-toggle="modal" data-target="#billModal">View Bill</button>
