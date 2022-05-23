@@ -19,7 +19,7 @@ class Billing extends Component {
     const { roomType, totalDays, occupants } = props;
     //calculations needed from static state/props
     const roomCharge = roomType === 'Standard' ? 275 : 395;
-    const occupantCharges = occupants === 1 ? 0 : (occupants - 1) * 75;
+    const occupantCharges = occupants === 1 ? 0 : (occupants - 1) * 25;
     const totalRoomCharges = totalDays * roomCharge;
     const totalOccupantCharges = totalDays * occupantCharges;
     const discount = totalDays >= 5 ? 45 : 0;
