@@ -22,7 +22,7 @@ class Billing extends Component {
     const occupantCharges = occupants === 1 ? 0 : (occupants - 1) * 300;
     const totalRoomCharges = totalDays * roomCharge;
     const totalOccupantCharges = totalDays * occupantCharges;
-    const discount = totalDays >= 5 ? 15 : 0;
+    const discount = totalDays >= 5 ? 45 : 0;
     const grandTotal = Math.ceil(
       totalRoomCharges - (totalRoomCharges - discount) / 100.0
     );

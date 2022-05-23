@@ -91,10 +91,10 @@ class Booking extends Component {
                         occupants={this.state.occupants}
                         roomType={this.state.roomType}
                         onOccupantsChange={this.onOccupantsChange}
-                        onRoomTypechange={this.onRoomTypeChange}
+                        onRoomTypeChange={this.onRoomTypeChange}
 
                       />
-                      <div className="form-btn">
+                      <div className="form-btn mt-4">
                         <button type="button" className="submit-btn bg-success" data-toggle="modal" data-target="#reserveModal">Reserve</button>
                         <button className="submit-btn ml-2" data-toggle="modal" data-target="#billModal">View Bill</button>
                       </div>

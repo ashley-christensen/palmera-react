@@ -13,6 +13,7 @@ const occupantOptions = [
   { value: 4, label: '4' },
 ];
 
+
 const RoomDetails = (props) => {
   let {
     roomType,
@@ -21,29 +22,35 @@ const RoomDetails = (props) => {
     onOccupantsChange
   } = props;
 
-  const handleChange = (e) => {
-    onRoomTypeChange(e.target.value);
+  const handleChangeRoom = ({ value }) => {
+    console.log(value);
+    onRoomTypeChange(value);
+  };
+
+  const handleChangeOccupants = ({ value }) => {
+    console.log(value);
+    onOccupantsChange(value);
   };
 
   return (
     <div>
-      <div className="form-group">
-        <label className="select-label">Room Type: {roomType} </label>
+      <div className="form-group mb-2">
+        <span className="form-label mt-3">Room Type </span>
+
         <Select
-          value={roomType}
-          onChange={handleChange}
+          onChange={handleChangeRoom}
           options={roomOptions}
           theme={theme}
+          placeholder="Room Type"
         />
 
-        <label className="select-label">Guests: {occupants}</label>
+        <span className="form-label mt-3">Guests</span>
         <Select
-          value={occupants}
-          onDatachange={onOccupantsChange}
+          onChange={handleChangeOccupants}
           options={occupantOptions}
           theme={theme}
+          placeholder="Number of Guests"
         />
-
       </div >
     </div>
   );
