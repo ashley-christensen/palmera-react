@@ -16,9 +16,7 @@ const occupantOptions = [
 
 const RoomDetails = (props) => {
   let {
-    roomType,
     onRoomTypeChange,
-    occupants,
     onOccupantsChange
   } = props;
 

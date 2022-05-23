@@ -26,9 +26,9 @@ class Booking extends Component {
 
   static getDerivedStateFromProps(props, state) {
     const totalDays = dateDiffInDays(state.checkinDate, state.checkoutDate);
-    const invalidRange = totalDays <= 0 || totalDays >= 20;
+    const inValidRange = totalDays <= 0 || totalDays >= 20;
     return {
-      totalDays, invalidRange,
+      totalDays, inValidRange,
     };
   }
 
@@ -72,7 +72,7 @@ class Booking extends Component {
                   <div className="booking-cta">
                     <h1>Make your Reservation</h1>
                     <p>
-                      Please note that special accommodations apply to Luxury Spa Week and Romantic Getaway. Discount applies for stays of five or more nights, or by request for entire resort rental. Please call us or fill out our reservation inquiries form for further assistance.
+                      Please note that special discounts apply to stay of 5 nights or more. Discount applies for stays of five or more nights, or by request for entire resort rental. Maximum of 20 nights allocated per reservation. Please call us or fill out our reservation inquiries form for further assistance.
                     </p>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ class Booking extends Component {
                         checkinDate={this.state.checkinDate}
                         checkoutDate={this.state.checkoutDate}
                         totalDays={this.state.totalDays}
-                        inValidRange={this.state.invalidRange}
+                        inValidRange={this.state.inValidRange}
                         onCheckInChange={this.onCheckInChange}
                         onCheckOutChange={this.onCheckOutChange}
                       />

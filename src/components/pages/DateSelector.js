@@ -10,7 +10,7 @@ const DateSelector = (props) => {
     checkinDate,
     checkoutDate,
     totalDays,
-    // invalidRange,
+    inValidRange,
     onCheckInChange,
     onCheckOutChange,
   } = props;
@@ -45,8 +45,7 @@ const DateSelector = (props) => {
               yearDropdownItemNumber={15}
               scrollableYearDropdown
             />
-            <span className="form-label">Nights : {totalDays}</span>
-            {/* {invalidRange && <p>Invalid Range</p>} */}
+            <span className="form-label">{inValidRange ? 'please enter valid range' : `Nights ${totalDays}`}</span>
           </div>
         </div>
       </div>
