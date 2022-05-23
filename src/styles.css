@@ -57,6 +57,13 @@ body {
 	margin-top: 0;
 	background-color: #f2f2f2;
 }
+/* About */
+
+.about-section {
+	padding: 100px;
+}
+
+/* Info */
 
 .section-info {
 	font-size: 14px;
@@ -80,6 +87,8 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+/* Featured */
 .card {
 	margin-top: 30px;
 }
@@ -107,8 +116,6 @@ span {
 .underline {
 	margin-bottom: 20px;
 }
-
-/* Featured Page */
 
 .featured-list {
 	background: #f2f2f2;
@@ -177,29 +184,15 @@ span {
 	height: 100%;
 }
 
-/* Footer Styles */
-
-.footer-link {
-	color: #b9e3ea;
-	text-decoration: none;
+.per {
+	font-size: 11px;
 }
 
-.footer-link:hover {
-	color: #e8f6f8;
-	text-decoration: none;
-}
-.footer-info {
-	color: #b9e3ea;
+.cost {
+	font-size: 12px;
 }
 
-.footer-contact {
-	color: #b9e3ea;
-}
-
-.copyright {
-	color: #b9e3ea;
-	font-size: 14;
-}
+/* Date Select */
 
 /* Booking */
 
@@ -320,6 +313,26 @@ span {
 	color: rgba(255, 255, 255, 0.8);
 }
 
-.about-section {
-	padding: 100px;
+/* Footer Styles */
+
+.footer-link {
+	color: #b9e3ea;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	color: #e8f6f8;
+	text-decoration: none;
+}
+.footer-info {
+	color: #b9e3ea;
+}
+
+.footer-contact {
+	color: #b9e3ea;
+}
+
+.copyright {
+	color: #b9e3ea;
+	font-size: 14;
 }

@@ -19,7 +19,7 @@ class Billing extends Component {
     const { roomType, totalDays, occupants } = props;
     //calculations needed from static state/props
     const roomCharge = roomType === 'Standard' ? 275 : 395;
-    const occupantCharges = occupants === 1 ? 0 : (occupants - 1) * 300;
+    const occupantCharges = occupants === 1 ? 0 : (occupants - 1) * 75;
     const totalRoomCharges = totalDays * roomCharge;
     const totalOccupantCharges = totalDays * occupantCharges;
     const discount = totalDays >= 5 ? 45 : 0;
@@ -63,39 +63,35 @@ class Billing extends Component {
                     <tbody className="table">
                       <tr>
                         <td>Room Charges</td>
-                        <td>{this.state.roomCharge} USD</td>
+                        <td><i className='fa-solid cost fa-dollar-sign'>{this.state.roomCharge}</i></td>
                       </tr>
                       <tr>
                         <td>Nights</td>
-                        <td>{this.props.totalDays}</td>
+                        <td><i className='fa-solid cost'>{this.props.totalDays}</i></td>
                       </tr>
                       <tr>
                         <td>Total Room Charges</td>
-                        <td>{this.state.totalRoomCharges} USD</td>
+                        <td><i className='fa-solid cost fa-dollar-sign'>{this.state.totalRoomCharges}</i></td>
                       </tr>
                       <tr>
                         <td>Discount</td>
-                        <td>{this.state.discount} USD</td>
+                        <td><i className='fa-solid cost fa-dollar-sign'>{this.state.discount}</i></td>
                       </tr>
                       <tr>
                         <td>Occupants</td>
-                        <td>{this.props.occupants}</td>
+                        <td><i className='fa-solid cost'>{this.props.occupants}</i></td>
                       </tr>
                       <tr>
                         <td>Occupant Charges</td>
-                        <td>{this.state.occupantCharges} USD per day</td>
+                        <td><i className='fa-solid cost fa-dollar-sign'>{this.state.totalOccupantCharges}</i><span className="per"> per day</span></td>
                       </tr>
                       <tr>
-                        <td>Occupant Charges</td>
-                        <td>{this.state.totalOccupantCharges} USD</td>
+                        <td>Total With Discount</td>
+                        <td><i className='fa-solid cost fa-dollar-sign'>{this.state.grandTotal}</i></td>
                       </tr>
                       <tr>
-                        <td>Grand Total With Discount</td>
-                        <td>{this.state.grandTotal} USD</td>
-                      </tr>
-                      <tr>
-                        <td>After Taxes</td>
-                        <td>{this.state.afterTax} USD</td>
+                        <td>Grand Total After Taxes</td>
+                        <td><i className='fa-solid cost fa-dollar-sign'>{this.state.afterTax}</i></td>
                       </tr>
                     </tbody>
                   </table>
