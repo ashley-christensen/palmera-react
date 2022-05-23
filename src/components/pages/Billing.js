@@ -57,9 +57,9 @@ class Billing extends Component {
                   &times;
                 </button>
               </div>
-              <div className='modal-body'>
-                <div className='container-fluid'>
-                  <table class="table-bill table-responsive table-striped p-3">
+              <div className='modal-body billing-modal'>
+                <div className='container'>
+                  <table class="table-responsive table-striped">
                     <tbody className="table">
                       <tr>
                         <td>Room Charges</td>
@@ -78,18 +78,18 @@ class Billing extends Component {
                         <td>{this.state.discount} USD</td>
                       </tr>
                       <tr>
-                        <tr>
-                          <td>Occupants</td>
-                          <td>{this.props.occupants}</td>
-                        </tr>
-                        <tr>
-                          <td>Occupant Charges</td>
-                          <td>{this.state.occupantCharges} USD per day</td>
-                        </tr>
-                        <tr>
-                          <td>Occupant Charges</td>
-                          <td>{this.state.totalOccupantCharges} USD</td>
-                        </tr>
+                        <td>Occupants</td>
+                        <td>{this.props.occupants}</td>
+                      </tr>
+                      <tr>
+                        <td>Occupant Charges</td>
+                        <td>{this.state.occupantCharges} USD per day</td>
+                      </tr>
+                      <tr>
+                        <td>Occupant Charges</td>
+                        <td>{this.state.totalOccupantCharges} USD</td>
+                      </tr>
+                      <tr>
                         <td>Grand Total With Discount</td>
                         <td>{this.state.grandTotal} USD</td>
                       </tr>
