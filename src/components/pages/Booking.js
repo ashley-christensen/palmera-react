@@ -24,6 +24,7 @@ class Booking extends Component {
     };
   }
 
+  //Derived State from props
   static getDerivedStateFromProps(props, state) {
     const totalDays = dateDiffInDays(state.checkinDate, state.checkoutDate);
     const inValidRange = totalDays <= 0 || totalDays >= 20;
