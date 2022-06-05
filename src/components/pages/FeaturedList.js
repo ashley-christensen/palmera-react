@@ -10,7 +10,6 @@ const FeaturedList = () => {
 			</h3>
 			<section className='section-cards-featured pb-5'>
 				{items.map((item) => {
-					console.log(item);
 					return <FeaturedItem key={item.id} {...item} />;
 				})}
 			</section>
