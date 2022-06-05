@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import locationData from '../../locationData';
 
-const position = [17.1172, -61.8457];
+const position = [17.0746557, -61.8175207];
 
 const Location = () => {
 
@@ -12,13 +12,13 @@ const Location = () => {
    <MapContainer
     style={{ width: '100%', height: '600px' }}
     className="map"
-    center={position} zoom={13} scrollWheelZoom={false}>
+    center={position} zoom={9} scrollWheelZoom={false}>
     <TileLayer
      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
     {locationData.map((location) => {
-     const { id, name, img_url, coordinates } = location;
+     const { id, name, img, coordinates } = location;
      return (
       <Marker
        key={id}
@@ -26,13 +26,13 @@ const Location = () => {
        <Popup>
         <div className='card-map'>
          <div className='img-container'>
-          <img src={img_url} className='card-img-top' />
+          <img src={img} className='map-img-top' />
          </div>
-         <div className='card-body'>
-          <div className='card-text'>
+         <div className='map-body'>
+          <div className='map-text'>
            <h5>{name}</h5>
           </div>
-          <button className='btn btn-more btn-sm btn-color mt-2'>
+          <button className='btn btn-more btn-sm btn-color'>
            Learn more
           </button>
          </div>
