@@ -11,7 +11,7 @@ body {
 	font-size: 20px;
 }
 .navbar .nav-link {
-	font-size: 10px;
+	font-size: 12px;
 	text-transform: uppercase;
 	padding-left: 16px !important;
 	padding-right: 16px !important;
@@ -336,4 +336,3 @@ span {
 	color: #b9e3ea;
 	font-size: 14;
 }
-
