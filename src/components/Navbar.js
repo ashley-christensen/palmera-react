@@ -5,11 +5,11 @@ import $ from 'jquery';
 const Navbar = () => {
 
 	useEffect(() => {
-				$(function () {
-					$('[data-toggle="tooltip"]').tooltip();
-				});
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
 	}, []);
-	
+
 	return (
 		<>
 			<nav className='navbar navbar-expand-lg navbar-dark bg-info'>
@@ -68,6 +68,15 @@ const Navbar = () => {
 								</NavLink>
 							</li>
 							<li className='nav-item'>
+								<NavLink
+									activeClassName='active'
+									to='/Location'
+									className='nav-link'
+								>
+									Location
+								</NavLink>
+							</li>
+							<li className='nav-item'>
 								<i className='fas icon-nav fa-duotone fa-umbrella-beach fa-2x'></i>
 							</li>
 						</ul>
@@ -78,7 +87,7 @@ const Navbar = () => {
 								data-toggle='modal'
 								data-target='#loginModal'
 								className='btn-login'
-								>
+							>
 								<i className='fa fa-sign-in'></i> Login
 							</a>
 						</span>

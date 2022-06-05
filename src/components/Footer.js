@@ -39,9 +39,14 @@ const Footer = () => {
                   Information
                 </Link>
               </div>
-               <div>
+              <div>
                 <Link to='/Booking' className='footer-link'>
                   Booking
+                </Link>
+              </div>
+              <div>
+                <Link to='/Location' className='footer-link'>
+                  Location
                 </Link>
               </div>
             </div>
