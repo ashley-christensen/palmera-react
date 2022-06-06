@@ -38,7 +38,7 @@ const Location = () => {
      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
     {locationData.map((location) => {
-     const { id, name, img, coordinates } = location;
+     const { id, name, img, url, coordinates } = location;
 
      return (
       <Marker
@@ -57,9 +57,11 @@ const Location = () => {
           <div className='map-text'>
            <h5>{name}</h5>
           </div>
-          <button className='btn btn-more btn-sm btn-color'>
-           Learn more
-          </button>
+          <a target="_blank" rel="noreferrer" href={url} >
+           <button className='btn btn-more btn-sm btn-color' >
+            Learn more
+           </button>
+          </a>
          </div>
         </div>
        </Popup>
