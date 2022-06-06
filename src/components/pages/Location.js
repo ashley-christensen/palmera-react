@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import locationData from '../../locationData';
@@ -6,13 +6,20 @@ import locationData from '../../locationData';
 const position = [17.0746557, -61.8175207];
 
 const Location = () => {
+ const mapRef = useRef(null);
 
+ // event listener to handle marker click
+ const handleClick = () => {
+  mapRef.current._popup._closeButton.addEventListener('click', (event) => {
+   event.preventDefault();
+  });
+ };
  return (
   <section>
    <MapContainer
     style={{ width: '100%', height: '600px' }}
     className="map"
-    center={position} zoom={11} scrollWheelZoom={false}>
+    center={position} zoom={11} scrollWheelZoom={false} ref={mapRef}>
     <TileLayer
      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -21,6 +28,9 @@ const Location = () => {
      const { id, name, img, coordinates } = location;
      return (
       <Marker
+       eventHandlers={{
+        click: (e) => handleClick(),
+       }}
        key={id}
        position={coordinates}>
        <Popup>
