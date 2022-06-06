@@ -12,7 +12,7 @@ const Location = () => {
    <MapContainer
     style={{ width: '100%', height: '600px' }}
     className="map"
-    center={position} zoom={9} scrollWheelZoom={false}>
+    center={position} zoom={11} scrollWheelZoom={false}>
     <TileLayer
      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
