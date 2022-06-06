@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import locationData from '../../locationData';
+
 
 const position = [17.0746557, -61.8175207];
 
@@ -14,6 +15,19 @@ const Location = () => {
    event.preventDefault();
   });
  };
+
+ useEffect(() => {
+  const L = require("leaflet");
+
+  delete L.Icon.Default.prototype._getIconUrl;
+
+  L.Icon.Default.mergeOptions({
+   iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+   iconUrl: require("leaflet/dist/images/marker-icon.png"),
+   shadowUrl: require("leaflet/dist/images/marker-shadow.png")
+  });
+ }, []);
+
  return (
   <section>
    <MapContainer
@@ -26,17 +40,20 @@ const Location = () => {
     />
     {locationData.map((location) => {
      const { id, name, img, coordinates } = location;
+
      return (
       <Marker
        eventHandlers={{
         click: (e) => handleClick(),
        }}
        key={id}
-       position={coordinates}>
+       position={coordinates}
+
+      >
        <Popup>
         <div className='card-map'>
          <div className='img-container'>
-          <img src={img} className='map-img-top' />
+          <img src={img} className='map-img-top' alt="beach" />
          </div>
          <div className='map-body'>
           <div className='map-text'>
@@ -51,11 +68,6 @@ const Location = () => {
       </Marker>
      );
     })}
-    {/* <Marker position={[17.1229191, -61.8909245]}>
-     <Popup>
-      Galley Bay Beach <br /> to be customized
-     </Popup>
-    </Marker> */}
    </MapContainer>
   </section >
  );
