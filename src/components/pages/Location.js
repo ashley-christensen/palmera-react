@@ -3,7 +3,6 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import locationData from '../../locationData';
 
-
 const position = [17.0746557, -61.8175207];
 
 const Location = () => {
@@ -48,7 +47,6 @@ const Location = () => {
        }}
        key={id}
        position={coordinates}
-
       >
        <Popup>
         <div className='card-map'>
