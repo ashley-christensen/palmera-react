@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import locationData from '../../locationData';
+import CardPopup from '../CardPopup';
+
 
 const position = [17.0746557, -61.8175207];
 
@@ -38,8 +40,7 @@ const Location = () => {
      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
     {locationData.map((location) => {
-     const { id, name, img, url, coordinates } = location;
-
+     const { coordinates, id } = location;
      return (
       <Marker
        eventHandlers={{
@@ -49,21 +50,7 @@ const Location = () => {
        position={coordinates}
       >
        <Popup>
-        <div className='card-map'>
-         <div className='img-container'>
-          <img src={img} className='map-img-top' alt="beach" />
-         </div>
-         <div className='map-body'>
-          <div className='map-text'>
-           <h5>{name}</h5>
-          </div>
-          <a target="_blank" rel="noreferrer" href={url} >
-           <button className='btn btn-more btn-sm btn-color' >
-            Learn more
-           </button>
-          </a>
-         </div>
-        </div>
+        <CardPopup {...location} />
        </Popup>
       </Marker>
      );
