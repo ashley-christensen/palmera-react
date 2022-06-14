@@ -4,7 +4,7 @@ const CardPopup = ({ img, name, url }) => {
  return (
   <div className='card-map'>
    <div className='img-container'>
-    <img src={img} className='map-img-top' alt="beach" />
+    <img src={img} className='map-img-top' alt={name} />
    </div>
    <div className='map-body'>
     <div className='map-text'>

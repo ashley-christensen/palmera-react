@@ -5,7 +5,7 @@ const FeaturedItem = ({ ...item }) => {
 		<>
 			<div className='card item-featured shadow stretched-link'>
 				<div className='img-container'>
-					<img src={item.img} className='card-img-top' alt='beach scene' />
+					<img src={item.img} className='card-img-top' alt={item.title} />
 				</div>
 				<div className='card-body'>
 					<div className='card-text'>
