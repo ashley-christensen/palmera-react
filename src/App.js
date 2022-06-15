@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Navbar from '../src/components/Navbar';
+import Header from './components/Header';
 import Footer from '../src/components/Footer';
 import Home from '../src/components/pages/Home';
 import About from './components/pages/About';
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <Header />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='About' element={<About />} />
