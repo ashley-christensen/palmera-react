@@ -10,7 +10,7 @@ body {
 .navbar-brand {
 	font-size: 20px;
 }
-.navbar .nav-link {
+.nav-link {
 	font-size: 12px;
 	text-transform: uppercase;
 	padding-left: 16px !important;

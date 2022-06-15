@@ -1,8 +1,17 @@
 import React, { useEffect } from 'react';
+import {
+	Navbar,
+	NavbarBrand,
+	Collapse,
+	NavbarToggler,
+	Nav,
+	NavItem,
+	Button
+} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
-const Navbar = () => {
+const Header = () => {
 
 	useEffect(() => {
 		$(function () {
@@ -12,89 +21,60 @@ const Navbar = () => {
 
 	return (
 		<>
-			<nav className='navbar navbar-expand-lg navbar-dark bg-info'>
-				<div className='container'>
-					<NavLink to='/' className='navbar-brand'>
-						Palmera Resort and Spa
-					</NavLink>
-					<button
-						className='navbar-toggler'
-						data-toggle='collapse'
-						data-target='#navbarCollapse'
+			<Navbar color='info' sticky='top' expand='lg'>
+				<NavbarBrand href='/' className='ms-5 text-white'>
+					Palmera Resort and Spa
+					<i className='fas icon-nav fa-duotone fa-umbrella-beach ml-3'></i>
+				</NavbarBrand>
+				<button
+					className='navbar-toggler'
+					data-toggle='collapse'
+					data-target='#navbarCollapse'
+				>
+					<span className='navbar-toggler-icon'></span>
+				</button>
+				<Nav className='ms-auto' id='navbarCollapse'>
+					<NavItem>
+						<NavLink to='/' className='nav-link text-white'>
+							Home
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink to='/About' className='nav-link text-white'>
+							About
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink to='/Featured' className='nav-link text-white'>
+							Featured
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink to='/Information' className='nav-link text-white'>
+							Information
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink to='/Booking' className='nav-link text-white'>
+							Booking
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink to='/Location' className='nav-link text-white'>
+							Location
+						</NavLink>
+					</NavItem>
+					<Button
+						role='button'
+						data-toggle='modal'
+						data-target='#loginModal'
+						className='btn-sm btn-info ml-3'
 					>
-						<span className='navbar-toggler-icon'></span>
-					</button>
-					<div className='collapse navbar-collapse' id='navbarCollapse'>
-						<ul className='navbar-nav ml-auto'>
-							<li className='nav-item'>
-								<NavLink activeClassName='active' to='/' className='nav-link'>
-									Home
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<NavLink
-									activeClassName='active'
-									to='/About'
-									className='nav-link'
-								>
-									About
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<NavLink
-									activeClassName='active'
-									to='/Featured'
-									className='nav-link'
-								>
-									Featured
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<NavLink
-									activeClassName='active'
-									to='/Information'
-									className='nav-link'
-								>
-									Information
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<NavLink
-									activeClassName='active'
-									to='/Booking'
-									className='nav-link'
-								>
-									Booking
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<NavLink
-									activeClassName='active'
-									to='/Location'
-									className='nav-link'
-								>
-									Location
-								</NavLink>
-							</li>
-							<li className='nav-item'>
-								<i className='fas icon-nav fa-duotone fa-umbrella-beach fa-2x'></i>
-							</li>
-						</ul>
-						{/* login */}
-						<span className='navbar-text ml-auto'>
-							<a
-								role='button'
-								data-toggle='modal'
-								data-target='#loginModal'
-								className='btn-login'
-							>
-								<i className='fa fa-sign-in'></i> Login
-							</a>
-						</span>
-						{/* login */}
-					</div>
-				</div>
-			</nav>
+						<i className='fa fa-sign-in'></i> Login
+					</Button>
+				</Nav>
+			</Navbar>
+
 			{/* Start Modal for Login  */}
 			<div id='loginModal' className='modal fade' role='dialog'>
 				<div className='modal-dialog' role='document'>
@@ -161,8 +141,9 @@ const Navbar = () => {
 				</div>
 			</div>
 			{/* End Modal for Login  */}
+
 		</>
 	);
 };
 
-export default Navbar;
+export default Header;
