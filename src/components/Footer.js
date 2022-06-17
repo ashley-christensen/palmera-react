@@ -25,11 +25,6 @@ const Footer = () => {
                 </Link>
               </div>
               <div>
-                <Link to='/About' className='footer-link'>
-                  About
-                </Link>
-              </div>
-              <div>
                 <Link to='/Featured' className='footer-link'>
                   Featured
                 </Link>
