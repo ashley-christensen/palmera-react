@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
 	Navbar,
 	NavbarBrand,
@@ -12,6 +12,7 @@ import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
 const Header = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	useEffect(() => {
 		$(function () {
@@ -21,58 +22,49 @@ const Header = () => {
 
 	return (
 		<>
-			<Navbar color='info' sticky='top' expand='lg'>
-				<NavbarBrand href='/' className='ms-5 text-white'>
+			<Navbar dark color='info' sticky='top' expand='lg'>
+				<NavbarBrand href='/' className='text-white pl-9' >
 					Palmera Resort and Spa
 					<i className='fas icon-nav fa-duotone fa-umbrella-beach ml-3'></i>
 				</NavbarBrand>
-				<button
-					className='navbar-toggler'
-					data-toggle='collapse'
-					data-target='#navbarCollapse'
-				>
-					<span className='navbar-toggler-icon'></span>
-				</button>
-				<Nav className='ms-auto' id='navbarCollapse'>
-					<NavItem>
-						<NavLink to='/' className='nav-link text-white'>
-							Home
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink to='/About' className='nav-link text-white'>
-							About
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink to='/Featured' className='nav-link text-white'>
-							Featured
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink to='/Information' className='nav-link text-white'>
-							Information
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink to='/Booking' className='nav-link text-white'>
-							Booking
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink to='/Location' className='nav-link text-white'>
-							Location
-						</NavLink>
-					</NavItem>
-					<Button
-						role='button'
-						data-toggle='modal'
-						data-target='#loginModal'
-						className='btn-sm btn-info ml-3'
-					>
-						<i className='fa fa-sign-in'></i> Login
-					</Button>
-				</Nav>
+				<NavbarToggler className="navbar-toggler" onClick={() => setMenuOpen(!menuOpen)}/>
+				<Collapse isOpen={menuOpen} className="navbar-collapse">
+					<Nav className='ms-auto' navbar>
+						<NavItem>
+							<NavLink to='/' className='nav-link '>
+								Home
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to='/Featured' className='nav-link'>
+								Featured
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to='/Information' className='nav-link'>
+								Information
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to='/Booking' className='nav-link'>
+								Booking
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to='/Location' className='nav-link'>
+								Location
+							</NavLink>
+						</NavItem>
+						<Button
+							role='button'
+							data-toggle='modal'
+							data-target='#loginModal'
+							className='btn-sm btn-info'
+						>
+							<i className='fa fa-sign-in'></i> Login
+						</Button>
+					</Nav>
+				</Collapse>
 			</Navbar>
 
 			{/* Start Modal for Login  */}
