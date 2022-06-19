@@ -136,6 +136,7 @@ span {
 	background: #f2f2f2;
 	padding: 100px;
 }
+
 .section-cards-featured {
 	margin: 0 auto;
 	max-width: 1030px;
@@ -143,6 +144,35 @@ span {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 30px;
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+	.section-cards-featured {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.item-featured {
+		margin: 1rem;
+	}
+}
+
+@media (min-width: 600px) {
+	.section-cards-featured {
+		grid-template-columns: repeat(2, 1fr);
+		margin: 10px auto;
+	}
+	.item-featured {
+		margin: 1rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.section-cards-featured {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.item-featured {
+		margin: 10px 0 10px;
+	}
 }
 
 /* Modal Headers */
