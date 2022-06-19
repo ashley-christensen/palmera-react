@@ -60,7 +60,7 @@ body {
 /* About */
 
 .about-section {
-	padding: 100px;
+	padding: 150px;
 }
 
 /* Info */
@@ -68,15 +68,18 @@ body {
 .section-info {
 	font-size: 14px;
 	line-height: 16px;
+	padding: 100px;
 }
 
 .icon {
 	font-size: 20px;
 	color: #17a2b8;
 }
+
 .icon-main {
 	margin-bottom: 20px;
 }
+
 .items-grid-container {
 	margin-bottom: 30px;
 }
@@ -131,6 +134,7 @@ span {
 
 .featured-list {
 	background: #f2f2f2;
+	padding: 75px;
 }
 .section-cards-featured {
 	margin: 0 auto;

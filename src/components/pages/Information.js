@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Information = () => {
   return (
     <>
-      <section className='section-info border-bottom py-5'>
+      <section className='section-info border-bottom'>
         <div className='container'>
           <h3 className='font-weight-bold display-6 text-center'>
             Request Information
@@ -37,17 +37,14 @@ const Information = () => {
                       placeholder='Enter Full Name'
                     />
                   </div>
-
                   <div className='form-group'>
                     <label className='mb-1'>Message</label>
-
                     <textarea
                       rows='3'
                       className='form-control'
                       placeholder='Enter Full Name'
                     ></textarea>
                   </div>
-
                   <div className='form-group py-3'>
                     <button
                       type='button'
