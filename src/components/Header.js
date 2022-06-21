@@ -46,13 +46,13 @@ const Header = () => {
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink to='/Booking' className='nav-link'>
-								Booking
+							<NavLink to='/Location' className='nav-link'>
+								Location
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink to='/Location' className='nav-link'>
-								Location
+							<NavLink to='/Booking' className='nav-link'>
+								Booking
 							</NavLink>
 						</NavItem>
 						<Button

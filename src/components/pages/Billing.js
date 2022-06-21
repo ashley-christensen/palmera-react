@@ -109,4 +109,3 @@ class Billing extends Component {
 
 export default Billing;
 
-
