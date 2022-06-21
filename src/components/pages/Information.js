@@ -8,8 +8,7 @@ const initialValues = {
   lastName: '',
   phoneNum: '',
   email: '',
-  agree: false,
-  contactType: 'By Phone',
+  inquiry: '',
 };
 
 const validateForm = () => ({});
