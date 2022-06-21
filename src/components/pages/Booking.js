@@ -96,8 +96,8 @@ class Booking extends Component {
 
                       />
                       <div className="form-btn mt-4">
-                        <button type="button" className="submit-btn bg-success" data-toggle="modal" data-target="#reserveModal">Reserve</button>
-                        <button className="submit-btn ml-2" data-toggle="modal" data-target="#billModal">View Bill</button>
+                        <button className="submit-btn" data-toggle="modal" data-target="#billModal">View Bill</button>
+                        <button type="button" className="submit-btn bg-success ml-2" data-toggle="modal" data-target="#reserveModal">Book!</button>
                       </div>
                     </form>
                   </div>

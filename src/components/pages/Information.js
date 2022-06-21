@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { FormGroup, Label, Col, Button } from 'reactstrap';
 
@@ -94,6 +94,11 @@ const Information = () => {
                   <Button type='submit' color='info'>
                     Send Inquiry
                   </Button>
+                  <Link to='/Booking'>
+                    <button type='submit' color='info' className='btn btn-success ml-1'>
+                      Book Now!
+                    </button>
+                  </Link>
                 </Col>
               </FormGroup>
             </Form>
