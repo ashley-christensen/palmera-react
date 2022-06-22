@@ -30,6 +30,7 @@ const RoomDetails = (props) => {
     onOccupantsChange(value);
   };
 
+
   return (
     <div>
       <div className="form-group mb-2">

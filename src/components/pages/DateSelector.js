@@ -44,7 +44,7 @@ const DateSelector = (props) => {
               yearDropdownItemNumber={15}
               scrollableYearDropdown
             />
-            <span className="form-label">{inValidRange ? 'please enter valid range' : `Nights: ${totalDays}`}</span>
+            <span className={inValidRange ? 'form-label-error' : 'form-label'}>{inValidRange ? 'please enter valid range' : `Nights: ${totalDays}`}</span>
           </div>
         </div>
       </div>
