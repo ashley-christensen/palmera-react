@@ -2,16 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { FormGroup, Label, Col, Button } from 'reactstrap';
+import { validateInfoForm } from '../../utils/validateInfoForm';
 
-const initialValues = {
-  firstName: '',
-  lastName: '',
-  phoneNum: '',
-  email: '',
-  inquiry: '',
-};
 
-const validateForm = () => ({});
 const handleSubmit = (values, { resetForm }) => {
   console.log('form values:', values);
   console.log('in JSON format:', JSON.stringify(values));
@@ -21,9 +14,15 @@ const handleSubmit = (values, { resetForm }) => {
 const Information = () => {
   return (
     <Formik
-      initialValues={initialValues}
-      validate={validateForm}
+      initialValues={{
+        firstName: '',
+        lastName: '',
+        phoneNum: '',
+        email: '',
+        inquiry: '',
+      }}
       onSubmit={handleSubmit}
+      validate={validateInfoForm}
     >
       <section className='section-info border-bottom'>
         <div className='container'>
@@ -41,6 +40,9 @@ const Information = () => {
                     name='firstName'
                     placeholder='First Name'
                     className='form-control' />
+                  <ErrorMessage name='firstName'>
+                    {(msg) => <p className='text-danger'>{msg}</p>}
+                  </ErrorMessage>
                 </Col>
               </FormGroup>
               <FormGroup row>
@@ -52,6 +54,9 @@ const Information = () => {
                     name='lastName'
                     placeholder='Last Name'
                     className='form-control' />
+                  <ErrorMessage name='lastName'>
+                    {(msg) => <p className='text-danger'>{msg}</p>}
+                  </ErrorMessage>
                 </Col>
               </FormGroup>
               <FormGroup row>
@@ -63,6 +68,9 @@ const Information = () => {
                     name='phoneNum'
                     placeholder='Phone'
                     className='form-control' />
+                  <ErrorMessage name='phoneNum'>
+                    {(msg) => <p className='text-danger'>{msg}</p>}
+                  </ErrorMessage>
                 </Col>
               </FormGroup>
               <FormGroup row>
@@ -74,6 +82,9 @@ const Information = () => {
                     name='email'
                     placeholder='Email'
                     className='form-control' />
+                  <ErrorMessage name='email'>
+                    {(msg) => <p className='text-danger'>{msg}</p>}
+                  </ErrorMessage>
                 </Col>
               </FormGroup>
               <FormGroup row>
