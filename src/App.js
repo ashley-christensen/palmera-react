@@ -3,17 +3,15 @@ import './styles.css';
 import Header from './components/Header';
 import Footer from '../src/components/Footer';
 import Home from '../src/components/pages/Home';
-import About from './components/pages/About';
 import FeaturedList from './components/pages/FeaturedList';
 import Information from './components/pages/Information';
 import Booking from './components/pages/Booking';
 import Location from './components/pages/Location';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
-      {/* <div> */}
+    <div className="App">
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -23,8 +21,8 @@ function App() {
         <Route path='Location' element={<Location />} />
       </Routes>
       <Footer />
-      {/* </div> */}
-    </Router>
+
+    </div>
   );
 }
 

@@ -9,16 +9,11 @@ import {
 	Button
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import $ from 'jquery';
+import UserLoginForm from '../utils/user/UserLoginForm';
 
 const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
-	useEffect(() => {
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip();
-		});
-	}, []);
 
 	return (
 		<>
@@ -27,7 +22,7 @@ const Header = () => {
 					Palmera Resort and Spa
 					<i className='fas icon-nav fa-duotone fa-umbrella-beach ml-3'></i>
 				</NavbarBrand>
-				<NavbarToggler className="navbar-toggler" onClick={() => setMenuOpen(!menuOpen)}/>
+				<NavbarToggler className="navbar-toggler" onClick={() => setMenuOpen(!menuOpen)} />
 				<Collapse isOpen={menuOpen} className="navbar-collapse">
 					<Nav className='ms-auto' navbar>
 						<NavItem>
@@ -55,84 +50,10 @@ const Header = () => {
 								Booking
 							</NavLink>
 						</NavItem>
-						<Button
-							role='button'
-							data-toggle='modal'
-							data-target='#loginModal'
-							className='btn-sm btn-info'
-						>
-							<i className='fa fa-sign-in'></i> Login
-						</Button>
 					</Nav>
+					<UserLoginForm />
 				</Collapse>
 			</Navbar>
-
-			{/* Start Modal for Login  */}
-			<div id='loginModal' className='modal fade' role='dialog'>
-				<div className='modal-dialog' role='document'>
-					<div className='modal-content'>
-						<div className='modal-header'>
-							<h3 className='modal-title'>Login</h3>
-							<button
-								type='button'
-								className='close modal-close'
-								data-dismiss='modal'
-							>
-								&times;
-							</button>
-						</div>
-						<div className='modal-body'>
-							<div className='container-fluid'>
-								<form>
-									<div className='form-row'>
-										<div className='form-group col-12'>
-											<label className='sr-only' htmlFor='loginEmail'>
-												Email address
-											</label>
-											<input
-												type='email'
-												className='form-control form-control-sm'
-												id='loginEmail'
-												placeholder='Enter email'
-											/>
-										</div>
-										<div className='form-group col-12'>
-											<label className='sr-only' htmlFor='loginPassword'>
-												Password
-											</label>
-											<input
-												type='password'
-												className='form-control form-control-sm'
-												id='loginPassword'
-												placeholder='Password'
-											/>
-										</div>
-										<div className='col'>
-											<div className='form-check'>
-												<input className='form-check-input' type='checkbox' />
-												<label className='form-check-label'> Remember me</label>
-											</div>
-										</div>
-									</div>
-									<div className='form-row'>
-										<button
-											type='button'
-											className='btn btn-secondary btn-sm ml-auto'
-											data-dismiss='modal'
-										>
-											Cancel
-										</button>
-										<button type='submit' className='btn btn-info btn-sm ml-1'>
-											Sign in
-										</button>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* End Modal for Login  */}
 
 		</>
 	);
