@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
 	Navbar,
 	NavbarBrand,
 	Collapse,
 	NavbarToggler,
 	Nav,
-	NavItem,
-	Button
+	NavItem
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import UserLoginForm from '../utils/user/UserLoginForm';
@@ -17,7 +16,7 @@ const Header = () => {
 
 	return (
 		<>
-			<Navbar dark color='info' sticky='top' expand='lg'>
+			<Navbar dark color="info" sticky='top' expand='lg'>
 				<NavbarBrand href='/' className='text-white pl-9' >
 					Palmera Resort and Spa
 					<i className='fas icon-nav fa-duotone fa-umbrella-beach ml-3'></i>

@@ -32,6 +32,8 @@ const UserLoginForm = () => {
  };
 
 
+
+
  return (
   <>
    <span className='navbar-text ml-auto'>
@@ -54,7 +56,9 @@ const UserLoginForm = () => {
     )}
    </span>
    <Modal isOpen={loginModalOpen}>
-    <ModalHeader toggle={() => setLoginModalOpen(false)}>Login</ModalHeader>
+    <ModalHeader
+     toggle={() => setLoginModalOpen(false)}
+    >Login</ModalHeader>
     <ModalBody>
      <Formik
       initialValues={{
