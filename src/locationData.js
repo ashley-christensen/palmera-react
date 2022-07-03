@@ -33,6 +33,27 @@ const locations = [
   url: 'http://www.beach-on-map.com/mamora-bay.html',
   id: 5,
   coordinates: [17.0123989, -61.7360088]
+ },
+ {
+  name: "Half Moon Bay",
+  img: './images/halfmoonsq.jpg',
+  url: 'https://www.halfmoonbayantigua.com',
+  id: 6,
+  coordinates: [17.0460680, -61.6813620]
+ },
+ {
+  name: "Sting Ray City",
+  img: './images/stingraysq.jpg',
+  url: 'http://www.stingraycityantigua.com',
+  id: 7,
+  coordinates: [17.0965, -61.7243]
+ },
+ {
+  name: "The Cove Restaurant",
+  img: './images/coverestsq.jpg',
+  url: 'http://bluewaters.net/dining/restaurants',
+  id: 7,
+  coordinates: [17.1702, -61.8351]
  }
 ];
 

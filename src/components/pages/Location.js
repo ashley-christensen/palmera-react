@@ -4,7 +4,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import locationData from '../../locationData';
 import CardPopup from '../CardPopup';
 
-
 const position = [17.0746557, -61.8175207];
 
 const Location = () => {
