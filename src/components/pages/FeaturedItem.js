@@ -2,6 +2,8 @@ import React from 'react';
 
 const FeaturedItem = ({ ...item }) => {
 	const { img, title, priceStr } = item;
+
+
 	return (
 		<>
 			<div className='card item-featured shadow stretched-link'>
