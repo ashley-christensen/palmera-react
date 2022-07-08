@@ -5,9 +5,9 @@ import items from '../data';
 const FeaturedList = () => {
 	return (
 		<div className='featured-list'>
-			<h3 className='font-weight-bold display-6 text-center'>
+			<h2 className='header-sections text-center display-6 mb-4'>
 				Featured Experiences
-			</h3>
+			</h2>
 			<section className='section-cards-featured pb-5'>
 				{items.map((item) => {
 					return <FeaturedItem key={item.id} {...item} />;

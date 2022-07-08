@@ -1,9 +1,9 @@
-import palm from './components/images/palmsq.jpg';
-import cabo from './components/images/cabosq.jpg';
-import cocktails from './components/images/cocktailsq.jpg';
-import float from './components/images/floatsq.jpg';
-import view from './components/images/viewsq.jpg';
-import reflections from './components/images/reflectionsq.jpg';
+import palm from './images/palmsq.jpg';
+import cabo from './images/cabosq.jpg';
+import cocktails from './images/cocktailsq.jpg';
+import float from './images/floatsq.jpg';
+import view from './images/viewsq.jpg';
+import reflections from './images/reflectionsq.jpg';
 
 const items = [
 	{

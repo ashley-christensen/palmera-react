@@ -26,9 +26,9 @@ const Information = () => {
     >
       <section className='section-info border-bottom'>
         <div className='container'>
-          <h3 className='font-weight-bold display-6 text-center'>
+          <h2 className='header-sections text-center display-6 mb-4'>
             Request Information
-          </h3>
+          </h2>
           <div className='card shadow booking-form'>
             <Form className="form-group">
               <FormGroup row>

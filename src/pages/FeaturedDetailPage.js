@@ -7,9 +7,7 @@ const FeaturedDetailPage = () => {
  const featured = selectFeaturedById(paramId);
 
  return (
-
   <FeaturedDetail featured={featured} />
-
  );
 };
 

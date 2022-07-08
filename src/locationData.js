@@ -1,11 +1,11 @@
-import galley from './components/images/galleybaysq.jpg';
-import barrington from './components/images/fortsq.jpg';
-import waterfront from './components/images/waterfrontsq.jpg';
-import marina from './components/images/marinasq.jpg';
-import mamora from './components/images/mamorasq.jpg';
-import moon from './components/images/halfmoonsq.jpg';
-import stingRay from './components/images/stingraysq.jpg';
-import cove from './components/images/coverestsq.jpg';
+import galley from './images/galleybaysq.jpg';
+import barrington from './images/fortsq.jpg';
+import waterfront from './images/waterfrontsq.jpg';
+import marina from './images/marinasq.jpg';
+import mamora from './images/mamorasq.jpg';
+import moon from './images/halfmoonsq.jpg';
+import stingRay from './images/stingraysq.jpg';
+import cove from './images/coverestsq.jpg';
 
 
 const locations = [

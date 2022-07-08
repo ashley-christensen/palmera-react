@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from '../components/Slider';
 import About from './About';
-import FeaturedList from './FeaturedList';
-import Information from './Information';
+// import FeaturedList from './FeaturedList';
+// import Information from './Information';
 
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
 			<div>
 				<Slider />
 				<About />
-				<FeaturedList />
-				<Information />
+				{/* <FeaturedList />
+				<Information /> */}
 			</div>
 		</>
 	);
