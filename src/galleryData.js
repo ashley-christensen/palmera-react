@@ -12,9 +12,10 @@ import mamora from './images/mamorasq.jpg';
 import moon from './images/halfmoonsq.jpg';
 import stingRay from './images/stingraysq.jpg';
 import cove from './images/coverestsq.jpg';
+import swing from './images/swingsq.jpg';
 
 const gallery = [
- view, palm, galley, stingRay, cocktails, barrington, waterfront, marina, mamora, moon, cabo, cove, reflections, float,
+ reflections, marina, waterfront, cove, galley, stingRay, float, swing, palm, cocktails, barrington, mamora, moon, cabo, view
 ];
 
 

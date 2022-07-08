@@ -398,6 +398,11 @@ span {
 
 /* Footer Styles */
 
+.site-footer {
+	background: linear-gradient(to top, white, 5%, #17a2b8);
+	padding: 20px 0;
+}
+
 .footer-link {
 	color: #b9e3ea;
 	text-decoration: none;

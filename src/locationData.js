@@ -6,6 +6,7 @@ import mamora from './images/mamorasq.jpg';
 import moon from './images/halfmoonsq.jpg';
 import stingRay from './images/stingraysq.jpg';
 import cove from './images/coverestsq.jpg';
+import swing from './images/swingsq.jpg';
 
 
 const locations = [
@@ -62,9 +63,16 @@ const locations = [
   name: "The Cove Restaurant",
   img: cove,
   url: 'http://bluewaters.net/dining/restaurants',
-  id: 7,
+  id: 8,
   coordinates: [17.1702, -61.8351]
- }
+ },
+ {
+  name: "Bumpkins Beach Bar",
+  img: swing,
+  url: 'http://https://simplyantiguabarbuda.com/listing/bumpkins/',
+  id: 9,
+  coordinates: [17.01036370510168, -61.77532106637955]
+ },
 ];
 
 export default locations;
