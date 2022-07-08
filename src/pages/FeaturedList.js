@@ -1,6 +1,6 @@
 import React from 'react';
-import FeaturedItem from './FeaturedItem';
-import items from '../../data';
+import FeaturedItem from '../components/FeaturedItem';
+import items from '../data';
 
 const FeaturedList = () => {
 	return (

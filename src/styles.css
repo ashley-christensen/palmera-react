@@ -4,6 +4,8 @@ body {
 	padding: 0;
 }
 
+/* Featured Page */
+
 .modal-header .btn-close {
 	margin: -0.5rem -0.5rem -0.5rem auto;
 	padding: 0.5rem;
@@ -17,6 +19,16 @@ body {
 	opacity: 0.5;
 	padding: 0.25em;
 	width: 1em;
+}
+
+/* Feature Detail */
+
+.container-feature {
+	display: flex;
+}
+
+.main-image {
+	border-radius: 4px;
 }
 
 /* Navbar  */

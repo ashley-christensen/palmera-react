@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { FormGroup, Label, Col, Button } from 'reactstrap';
-import { validateInfoForm } from '../../utils/validateInfoForm';
+import { validateInfoForm } from '../utils/validateInfoForm';
 
 
 const handleSubmit = (values, { resetForm }) => {

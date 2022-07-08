@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import locationData from '../../locationData';
-import CardPopup from '../CardPopup';
+import locationData from '../locationData';
+import CardPopup from '../components/CardPopup';
 
 const position = [17.0746557, -61.8175207];
 
