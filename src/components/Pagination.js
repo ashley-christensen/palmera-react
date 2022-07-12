@@ -43,10 +43,10 @@ const Pagination = ({
     <button
      type="button"
      className="arrowButton left"
-     // Do not remove the aria-label below, it is used for Hatchways automation.
      aria-label="Goto previous page"
      onClick={onPrevious}
-     disabled={currentPage === 1 ? true : false} // change this line to disable a button.
+     disabled={currentPage === 1 ? true : false}
+
     >
      <ChevronLeftIcon />
     </button>
@@ -67,11 +67,11 @@ const Pagination = ({
      <li
       key={key}
       className="paginationItem"
-      aria-current="false" // change this line to highlight a current page.
+      aria-current="false"
      >
       <button
        type="button"
-       // Do not remove the aria-label below, it is used for Hatchways automation.
+
        aria-label={`Goto page ${pageNumber}`}
        onClick={() => onPageChange(pageNumber)}
        style={{
@@ -88,10 +88,9 @@ const Pagination = ({
     <button
      type="button"
      className="arrowButton right"
-     // Do not remove the aria-label below, it is used for Hatchways automation.
      aria-label="Goto next page"
      onClick={onNext}
-     disabled={currentPage === lastPage ? true : false} // change this line to disable a button.
+     disabled={currentPage === lastPage ? true : false}
     >
      <ChevronRightIcon />
     </button>
@@ -99,7 +98,7 @@ const Pagination = ({
 
    <select
     className="paginationSelector"
-  
+
     aria-label="Select page size"
     value={pageSize}
     onChange={(e) => {
