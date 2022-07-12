@@ -9,7 +9,7 @@ function BlogPost({ author, title, excerpt, image }) {
      <img
       className="image"
       src={image}
-      alt="beach"
+      alt="Author"
      />
      <p variant="body">{author}</p>
     </div>

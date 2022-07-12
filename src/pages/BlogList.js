@@ -1,9 +1,10 @@
 import BlogPost from "../components/BlogPost";
 import Pagination from '../components/Pagination';
 import React, { useState, useMemo } from "react";
-import posts from '../blogsData.js';
+import blogs from '../blogData.json';
 
-const PAGE_SIZES = [10, 25, 50, 100];
+
+const PAGE_SIZES = [15, 25, 50, 100];
 
 function BlogList() {
  const [currentPage, setCurrentPage] = useState(1);
@@ -12,8 +13,7 @@ function BlogList() {
  const currentPaginationData = useMemo(() => {
   const startPage = (currentPage - 1) * pageSize;
   const finalPage = startPage + pageSize;
-  console.log(posts);
-  return posts.slice(startPage, finalPage);
+  return blogs.posts.slice(startPage, finalPage);
  }, [currentPage, pageSize]);
 
  const updateRowsPerPage = (rows) => {
@@ -25,21 +25,17 @@ function BlogList() {
  };
 
  return (
-  <div className="mt-10 py-5">
-   <div>
-    <h2 className='header-sections text-center display-6 mb-4'>
-     Blog
-    </h2>
-   </div>
+  <div>
    <Pagination
     currentPage={currentPage}
-    totalCount={posts.length}
+    totalCount={blogs.posts.length}
     pageSize={pageSize}
     pageSizeOptions={PAGE_SIZES}
     onPageChange={updatePage}
     onPageSizeOptionChange={updateRowsPerPage}
    />
    <ul
+
     aria-label="blog list"
    >
     {currentPaginationData.map((blog) => (
