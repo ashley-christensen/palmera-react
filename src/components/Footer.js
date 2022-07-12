@@ -25,18 +25,23 @@ const Footer = () => {
                 </Link>
               </div>
               <div>
+                <Link to='/Location' className='footer-link'>
+                  Location
+                </Link>
+              </div>
+              <div>
                 <Link to='/Featured' className='footer-link'>
                   Featured
                 </Link>
               </div>
               <div>
-                <Link to='/Information' className='footer-link'>
-                  Information
+                <Link to='/Booking' className='footer-link'>
+                  Booking
                 </Link>
               </div>
               <div>
-                <Link to='/Booking' className='footer-link'>
-                  Booking
+                <Link to='/Blog' className='footer-link'>
+                  Blog
                 </Link>
               </div>
             </div>

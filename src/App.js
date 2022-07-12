@@ -5,9 +5,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import FeaturedList from './pages/FeaturedList';
 import FeaturedDetailPage from './pages/FeaturedDetailPage';
-import Information from './pages/Information';
 import Booking from './pages/Booking';
 import Location from './pages/Location';
+import BlogList from './pages/BlogList';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,11 +16,11 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='Location' element={<Location />} />
         <Route path='Featured' element={<FeaturedList />} />
         <Route path='Featured/:paramId' element={<FeaturedDetailPage />} />
-        <Route path='Information' element={<Information />} />
         <Route path='Booking' element={<Booking />} />
-        <Route path='Location' element={<Location />} />
+        <Route path='Blog' element={<BlogList />} />
       </Routes>
       <Footer />
 

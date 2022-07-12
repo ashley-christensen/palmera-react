@@ -1,4 +1,4 @@
-import data from '../data';
+import data from '../featuredData';
 
 export const selectFeaturedById = (id) => {
   const featured = data.find(

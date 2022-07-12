@@ -8,7 +8,14 @@ body {
 	font-weight: 600;
 }
 /* Image Gallery  */
+.image-gallery-section {
+	background-color: #eeeeee;
+	padding: 60px 0;
+}
 
+.gallery-header {
+	padding-bottom: 30px;
+}
 .image-gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -33,7 +40,6 @@ body {
 
 .image-gallery > li {
 	flex-grow: 1;
-	/* ... */
 }
 
 .image-gallery::after {
@@ -300,7 +306,7 @@ span {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(47, 103, 177, 0.6);
+	background: #2f67b199;
 }
 
 .input-label {
@@ -310,8 +316,8 @@ span {
 .booking-form {
 	background-color: #fff;
 	padding: 50px 20px;
-	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 5px 20px -5px #0000004d;
+	box-shadow: 0px 5px 20px -5px #0000004d;
 	border-radius: 4px;
 }
 
@@ -393,7 +399,7 @@ span {
 
 .booking-cta p {
 	font-size: 18px;
-	color: rgba(255, 255, 255, 0.8);
+	color: #ffffffcc;
 }
 
 /* Footer Styles */
@@ -423,4 +429,93 @@ span {
 .copyright {
 	color: #b9e3ea;
 	font-size: 14;
+}
+
+.wrapper {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	list-style-type: none;
+	margin: 40px 0 40px;
+	font-family: 'Poppins';
+}
+
+.wrapper .paginationItem {
+	display: flex;
+}
+.wrapper .paginationItem button {
+	border: 1px solid #2f67b199;
+	background: transparent;
+	height: 34px;
+	width: 34px;
+	border-radius: 50%;
+	overflow: hidden;
+	color: rgb(0, 0, 0);
+}
+.wrapper .paginationItem button:hover {
+	background-color: #2f67b199;
+	cursor: pointer;
+}
+.wrapper .paginationItem button:disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.wrapper[aria-current='page'] button {
+	/* background-color: rgba(47, 103, 177, 0.6); */
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.arrowButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.arrowButton svg {
+	width: 1em;
+	height: 1em;
+}
+
+.dots {
+	line-height: 34px;
+	margin: 5px 10px;
+}
+
+.paginationSelector {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	margin-left: 10px;
+}
+
+.blog h5 {
+	font-size: 24px;
+}
+
+.imageWrapper {
+	align-items: center;
+}
+.blogsWrapper {
+	background-color: #eeeeee;
+	padding: 10px;
+	max-width: 100%;
+	/* align-items: flex-start; */
+	margin: 35px 35px 35px 0px;
+	border-radius: 4px;
+	/* margin-right: 10px; */
+	list-style-type: none;
+}
+
+.blogsWrapper .blog .imageWrapper {
+	display: flex;
+}
+.blogsWrapper .blog .image {
+	width: 90px;
+	height: 90px;
+	margin: 15px;
+}
+
+.blogsWrapper .blog .excerpt {
+	color: #757575;
 }

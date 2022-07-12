@@ -30,23 +30,23 @@ const Header = () => {
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink to='/Featured' className='nav-link'>
-								Featured
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink to='/Information' className='nav-link'>
-								Information
-							</NavLink>
-						</NavItem>
-						<NavItem>
 							<NavLink to='/Location' className='nav-link'>
 								Location
 							</NavLink>
 						</NavItem>
 						<NavItem>
+							<NavLink to='/Featured' className='nav-link'>
+								Featured
+							</NavLink>
+						</NavItem>
+						<NavItem>
 							<NavLink to='/Booking' className='nav-link'>
 								Booking
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink to='/Blog' className='nav-link'>
+								Blog
 							</NavLink>
 						</NavItem>
 					</Nav>
