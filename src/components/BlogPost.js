@@ -1,7 +1,11 @@
 
-import React from "react";
+import { useEffect, useState } from "react";
 
 function BlogPost({ author, title, excerpt, image }) {
+ 
+
+
+
  return (
   <li className="blogsWrapper">
    <div className="blog">

@@ -25,7 +25,10 @@ function BlogList() {
  };
 
  return (
-  <div>
+  <div className="mt-5">
+   <div>
+    <h2 className='header-sections text-center display-6 mb-4'>Blog</h2>
+   </div>
    <Pagination
     currentPage={currentPage}
     totalCount={blogs.posts.length}
