@@ -1,6 +1,7 @@
-import React from 'react';
 
-const CardPopup = ({ img, name, url }) => {
+
+const CardPopup = (location) => {
+ const { name, img, url } = location;
  return (
   <div className='card-map'>
    <div className='img-container'>
@@ -15,6 +16,11 @@ const CardPopup = ({ img, name, url }) => {
       Learn more
      </button>
     </a>
+    <button onClick={(name) => {
+     console.log(name);
+    }} className='btn btn-more btn-sm btn-success' >
+     Favorite
+    </button>
    </div>
   </div>
  );

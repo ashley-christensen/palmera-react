@@ -1,10 +1,6 @@
 
-// import { useEffect, useState } from "react";
 
 function BlogPost({ author, title, excerpt, image }) {
-
-
-
 
  return (
   <li className="blogsWrapper">
