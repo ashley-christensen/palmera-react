@@ -53,7 +53,7 @@ const Location = () => {
         position={coordinates}
        >
         <Popup>
-         <CardPopup location={location} favorites={favorites} setFavorites={setFavorites} />
+         <CardPopup {...location} favorites={favorites} setFavorites={setFavorites} />
         </Popup>
        </Marker>
       );
