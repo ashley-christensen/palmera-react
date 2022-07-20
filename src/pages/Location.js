@@ -35,7 +35,7 @@ const Location = () => {
   <section className="location">
    <div>
     <MapContainer
-     style={{ width: '60%', height: '600px' }}
+     style={{ width: '100%', height: '600px' }}
      className="map"
      center={position} zoom={11} scrollWheelZoom={false} ref={mapRef}>
      <TileLayer
@@ -59,9 +59,9 @@ const Location = () => {
       );
      })}
     </MapContainer>
-    <div style={{ width: '40%' }} className="favorites">
+    {/* <div style={{ width: '40%' }} className="favorites">
      <FavoritesList favorites={favorites} setFavorites={setFavorites} />
-    </div>
+    </div> */}
    </div>
   </section >
  );

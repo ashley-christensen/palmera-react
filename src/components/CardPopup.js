@@ -16,7 +16,7 @@ const CardPopup = (location) => {
       Learn more
      </button>
     </a>
-    <button onClick={(name) => {
+    <button onClick={() => {
      console.log(name);
     }} className='btn btn-more btn-sm btn-success' >
      Favorite
