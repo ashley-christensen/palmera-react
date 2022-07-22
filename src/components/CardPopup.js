@@ -1,6 +1,7 @@
 
 
 const CardPopup = (location) => {
+
  const { name, img, url } = location;
  return (
   <div className='card-map'>
