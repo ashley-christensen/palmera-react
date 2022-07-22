@@ -1,8 +1,11 @@
+
 import { Link } from 'react-router-dom';
 
 
 const FeaturedItem = ({ ...item }) => {
 	const { img, title, priceStr, id } = item;
+
+
 
 	return (
 		<>
