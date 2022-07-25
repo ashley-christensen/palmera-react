@@ -1,11 +1,11 @@
-
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 const FeaturedItem = ({ ...item }) => {
+
 	const { img, title, priceStr, id } = item;
-
-
 
 	return (
 		<>
@@ -29,4 +29,4 @@ const FeaturedItem = ({ ...item }) => {
 	);
 };
 
-export default FeaturedItem;
+export default FeaturedItem;;
