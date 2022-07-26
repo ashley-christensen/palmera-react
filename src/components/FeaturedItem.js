@@ -10,7 +10,7 @@ const FeaturedItem = ({ ...item }) => {
 	return (
 		<>
 			<div className='card item-featured shadow'>
-				<div className='img-container'>
+				<div className='img-container zoom-img'>
 					<img src={img} className='card-img-top' alt={title} />
 				</div>
 				<div className='card-body'>

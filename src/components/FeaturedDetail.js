@@ -6,8 +6,6 @@ const FeaturedDetail = ({ featured }) => {
  const { img, title, description } = featured;
 
 
-
-
  return (
   <Container className='mt-5 mb-5'>
    <h1 className='text-uppercase mr-5 mb-4'>{title}</h1>

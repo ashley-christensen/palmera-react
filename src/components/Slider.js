@@ -24,7 +24,7 @@ const Slider = () => {
                     Find your bliss on a private beach front with cabanas
                   </p>
                   <Link
-                    to='/Information'
+                    to='/Featured'
                     className='btn btn-color slide-btn btn-lg'
                   >
                     More Info
@@ -41,7 +41,7 @@ const Slider = () => {
                     Delight yourself in luxury suite and spa
                   </p>
                   <Link
-                    to='/Information'
+                    to='/Featured'
                     className='btn btn-color slide-btn btn-lg'
                   >
                     More Info
@@ -59,7 +59,7 @@ const Slider = () => {
                     and more
                   </p>
                   <Link
-                    to='/Information'
+                    to='/Featured'
                     className='btn btn-color slide-btn btn-lg'
                   >
                     More Info

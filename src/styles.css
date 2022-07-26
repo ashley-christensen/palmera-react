@@ -48,8 +48,24 @@ body {
 }
 
 /* Featured */
+
+/* Zoom animation */
+.zoom-img {
+	overflow: hidden;
+}
+.zoom-img > img {
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+}
+
+.zoom-img:hover > img {
+	transform: scale(1.2);
+}
+/*  */
+
 .card {
 	margin-top: 30px;
+	margin-left: 30px;
 }
 
 .card-text,

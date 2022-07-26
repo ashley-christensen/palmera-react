@@ -20,7 +20,6 @@ function BlogList() {
    console.log(blogs);
    setBlogs(blogs);
 
-
   } catch (error) {
    setError(true);
    console.error(error.message);

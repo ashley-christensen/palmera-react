@@ -40,7 +40,6 @@ const ImageGallery = () => {
         <img src={item}
          // loading="lazy" 
          alt="" />
-        {/* <div class="overlay"><span>title</span></div> */}
        </li>
       );
      })}
