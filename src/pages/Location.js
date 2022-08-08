@@ -61,7 +61,6 @@ const Location = () => {
        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {loading && <Loading />}
-      {/* {error && <div>ERROR</div>} */}
       {!loading && data.locations.map((location) => {
        const { coordinates, id } = location;
        return (

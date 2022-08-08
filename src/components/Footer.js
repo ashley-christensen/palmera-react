@@ -39,11 +39,6 @@ const Footer = () => {
                   Booking
                 </Link>
               </div>
-              <div>
-                <Link to='/Blog' className='footer-link'>
-                  Blog
-                </Link>
-              </div>
             </div>
             <div className='col-md-4 text-center'>
               <h6>Contact Information</h6>
